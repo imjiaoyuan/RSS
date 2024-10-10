@@ -1,6 +1,7 @@
 ## RSS Posts
 
 <!-- Posts:START -->
+- [ 后面试时代与 AI 刷题 ](http://www.ruanyifeng.com/blog/2024/10/ai-code-interview.html) / Thu/10/10
 - [ AI 和写作 ](https://lutaonan.com/blog/ai-writing/) / Wed/10/09
 - [ 生信爱好者周刊（第 142 期）：聊聊你最近正在关注的某个领域或者研究热点吧？ ](https://openbiox.github.io/weekly/issue-142/) / Mon/09/30
 - [ 里斯本日记（一） ](https://justgoidea.com/posts/2024-025/) / Sun/09/29
@@ -19,6 +20,5 @@
 - [ 科技爱好者周刊（第 318 期）：创业咖啡馆的记忆 ](http://www.ruanyifeng.com/blog/2024/09/weekly-issue-318.html) / Fri/09/20
 - [ 周报 #73 - 《社交网络》、Ego 与中秋的现充生活 ](https://www.pseudoyu.com/zh/2024/09/18/weekly_review_20240918/) / Tue/09/17
 - [ 半生荒唐 只因有你 ](https://wangyurui.com/posts/piao-jiu-wei-feng-chen-41d36c8e) / Mon/09/16
-- [ pacman 7.0.0 更新，本地仓库需要手动干预 ](https://www.archlinuxcn.org/manual-intervention-for-pacman-700-and-local-repositories-required/) / Sat/09/14
-- [ 生信爱好者周刊（第 140 期）：七年：一个皖北大学生的一生 ](https://openbiox.github.io/weekly/issue-140/) / Sat/09/14<!-- Posts:END -->
+- [ pacman 7.0.0 更新，本地仓库需要手动干预 ](https://www.archlinuxcn.org/manual-intervention-for-pacman-700-and-local-repositories-required/) / Sat/09/14<!-- Posts:END -->
 
