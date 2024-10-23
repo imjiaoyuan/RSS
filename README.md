@@ -1,6 +1,6 @@
 ### Posts
 <!-- Posts:START -->
-- [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi%e5%9f%ba%e7%a1%80%e7%90%86%e8%a7%a3-%e9%98%85%e8%af%bb%e7%ac%94%e8%ae%b0.html) / Wed/10/23
+- [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi-learning.html) / Wed/10/23
 - [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
 - [ Apple Watch 健康、运动类 App 个人横评 ](https://1q43.blog/post/7728) / Tue/10/22
 - [ 周报 #74 - 清迈异闻录 ](https://www.pseudoyu.com/zh/2024/10/21/weekly_review_202401021/) / Mon/10/21
