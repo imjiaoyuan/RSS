@@ -1,3 +1,42 @@
 ### Posts
 <!-- Posts:START -->
-<!-- Posts:END -->
+- [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
+- [ Apple Watch 健康、运动类 App 个人横评 ](https://1q43.blog/post/7728) / Tue/10/22
+- [ 周报 #74 - 清迈异闻录 ](https://www.pseudoyu.com/zh/2024/10/21/weekly_review_202401021/) / Mon/10/21
+- [ 第196期 - 新显示器 ](https://weekly.tw93.fun/posts/196-%E6%96%B0%E6%98%BE%E7%A4%BA%E5%99%A8/) / Mon/10/21
+- [ Weekly#13 ](https://taxodium.ink/13.html) / Sun/10/20
+- [ 生信爱好者周刊（第 144期）:物理诺贝尔奖为何颁给了 HNN 之父和深度学习之父？ ](https://openbiox.github.io/weekly/issue-144/) / Sun/10/20
+- [ 素食伦理 ](https://yufree.cn/cn/2024/10/20/vegetarian/) / Sun/10/20
+- [ 答复 dayu 的问卷 ](https://justgoidea.com/posts/2024-026/) / Fri/10/18
+- [ 一次海外购物经历 ](https://taxodium.ink/an-overseas-shopping-adventure.html) / Fri/10/18
+- [ 我的键盘 ](https://taxodium.ink/keyboards.html) / Fri/10/18
+- [ 科技爱好者周刊（第 321 期）：傅盛回忆录 ](http://www.ruanyifeng.com/blog/2024/10/weekly-issue-321.html) / Thu/10/17
+- [ 再读毛选：《井冈山的斗争》 ](https://wangyurui.com/posts/zai-du-mao-xuan-jing-gang-shan-de-dou-zheng-890adb22) / Thu/10/17
+- [ 欲买桂花同载酒 ](https://wangyurui.com/posts/yu-mai-gui-hua-tong-zai-jiu-5087b7a8) / Wed/10/16
+- [ 胃镜检查 ](https://taxodium.ink/gastroscopy.html) / Tue/10/15
+- [ 生信爱好者周刊（第 143 期）：中国科学家可以摆脱“35岁焦虑”吗 ](https://openbiox.github.io/weekly/issue-143/) / Mon/10/14
+- [ 独立博客自省问卷15题 ](https://imzm.im/15-questions-on-blogging/) / Mon/10/14
+- [ 第195期 - BELLOCO ](https://weekly.tw93.fun/posts/195-BELLOCO/) / Mon/10/14
+- [ 还原论 ](https://yufree.cn/cn/2024/10/14/reductionism/) / Mon/10/14
+- [ 法老的国度——上博埃及展记录 ](https://blog.pursuitus.com/pharaohs-kingdom-record-of-the-egypt-expo.html) / Sun/10/13
+- [ 别相信直觉 - 读书笔记 ](https://tw93.fun/2024-10-13/intuition.html) / Sun/10/13
+- [ Weekly#12 ](https://taxodium.ink/12.html) / Sat/10/12
+- [ 科技爱好者周刊（第 320 期）：乒乓仓 ](http://www.ruanyifeng.com/blog/2024/10/weekly-issue-320.html) / Fri/10/11
+- [ 后面试时代与 AI 刷题 ](http://www.ruanyifeng.com/blog/2024/10/ai-code-interview.html) / Thu/10/10
+- [ 2024.10.10: 各种链接 ](https://www.owenyoung.com/blog/journals/2024-10-10/) / Wed/10/09
+- [ AI 和写作 ](https://lutaonan.com/blog/ai-writing/) / Wed/10/09
+- [ Weekly#11 ](https://taxodium.ink/11.html) / Sun/10/06
+- [ 香港迪士尼一日游 ](https://taxodium.ink/hong-kong-disneyland.html) / Thu/10/03
+- [ 生信爱好者周刊（第 142 期）：聊聊你最近正在关注的某个领域或者研究热点吧？ ](https://openbiox.github.io/weekly/issue-142/) / Mon/09/30
+- [ 里斯本日记（一） ](https://justgoidea.com/posts/2024-025/) / Sun/09/29
+- [ 注疏体 ](https://yufree.cn/cn/2024/09/29/footnote/) / Sun/09/29
+- [ 因 Magisk 模块致 Pixel 8 卡死在 Fastboot 的救砖记录 ](https://blog.ichr.me/post/pixel-stuck-in-fastboot-magisk-module/) / Sat/09/28
+- [ 我是猫 ](https://wangyurui.com/posts/wo-shi-mao-a607564f) / Sat/09/28
+- [ 再读毛选：《中国的红色政权为什么能够存在？》 ](https://wangyurui.com/posts/zai-du-mao-xuan-zhong-guo-de-hong-se-zheng-quan-3f56fbc7) / Sat/09/28
+- [ 再读毛选：《湖南农民运动考察报告》 ](https://wangyurui.com/posts/du-mao-xuan-hu-nan-nong-min-yun-dong-kao-cha-bao-8175ab26) / Sat/09/28
+- [ Weekly#10 ](https://taxodium.ink/10.html) / Fri/09/27
+- [ 科技爱好者周刊（第 319 期）：如何拍出爆款视频 ](http://www.ruanyifeng.com/blog/2024/09/weekly-issue-319.html) / Fri/09/27
+- [ HelloGitHub 第 102 期 ](https://hellogithub.com/periodical/volume/102) / Thu/09/26
+- [ 使用 org-publish 发布博客 ](https://taxodium.ink/org-publish-blog.html) / Thu/09/26
+- [ 巴黎圣母院 2024巡演 ](https://blog.pursuitus.com/notre-dame-cathedral-2024-tour.html) / Tue/09/24
+- [ 洗澡这件小事值得被认真对待 ](https://limboy.me/posts/shower-habit) / Tue/09/24<!-- Posts:END -->
