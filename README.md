@@ -1,5 +1,6 @@
 ### Posts
 <!-- Posts:START -->
+- [ 周报 #75 - 回答 Dayu 的 9 个问题 ](https://www.pseudoyu.com/zh/2024/10/23/weekly_review_202401023/) / Wed/10/23
 - [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi-learning.html) / Wed/10/23
 - [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
 - [ Apple Watch 健康、运动类 App 个人横评 ](https://1q43.blog/post/7728) / Tue/10/22
@@ -38,5 +39,4 @@
 - [ Weekly#10 ](https://taxodium.ink/10.html) / Fri/09/27
 - [ 科技爱好者周刊（第 319 期）：如何拍出爆款视频 ](http://www.ruanyifeng.com/blog/2024/09/weekly-issue-319.html) / Fri/09/27
 - [ HelloGitHub 第 102 期 ](https://hellogithub.com/periodical/volume/102) / Thu/09/26
-- [ 使用 org-publish 发布博客 ](https://taxodium.ink/org-publish-blog.html) / Thu/09/26
-- [ 巴黎圣母院 2024巡演 ](https://blog.pursuitus.com/notre-dame-cathedral-2024-tour.html) / Tue/09/24<!-- Posts:END -->
+- [ 使用 org-publish 发布博客 ](https://taxodium.ink/org-publish-blog.html) / Thu/09/26<!-- Posts:END -->
