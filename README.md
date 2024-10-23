@@ -1,5 +1,6 @@
 ### Posts
 <!-- Posts:START -->
+- [ 周报 #76 - 关于 Audlting 的思考 ](https://www.pseudoyu.com/zh/2024/10/24/weekly_review_202401024/) / Wed/10/23
 - [ 周报 #75 - 回答 Dayu 关于独立博客的 9 个问题 ](https://www.pseudoyu.com/zh/2024/10/23/weekly_review_202401023/) / Wed/10/23
 - [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi-learning.html) / Wed/10/23
 - [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
@@ -38,5 +39,4 @@
 - [ 再读毛选：《湖南农民运动考察报告》 ](https://wangyurui.com/posts/du-mao-xuan-hu-nan-nong-min-yun-dong-kao-cha-bao-8175ab26) / Sat/09/28
 - [ Weekly#10 ](https://taxodium.ink/10.html) / Fri/09/27
 - [ 科技爱好者周刊（第 319 期）：如何拍出爆款视频 ](http://www.ruanyifeng.com/blog/2024/09/weekly-issue-319.html) / Fri/09/27
-- [ HelloGitHub 第 102 期 ](https://hellogithub.com/periodical/volume/102) / Thu/09/26
-- [ 使用 org-publish 发布博客 ](https://taxodium.ink/org-publish-blog.html) / Thu/09/26<!-- Posts:END -->
+- [ HelloGitHub 第 102 期 ](https://hellogithub.com/periodical/volume/102) / Thu/09/26<!-- Posts:END -->
