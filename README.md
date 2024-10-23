@@ -1,6 +1,6 @@
 ### Posts
 <!-- Posts:START -->
-- [ 周报 #75 - 回答 Dayu 的 9 个问题 ](https://www.pseudoyu.com/zh/2024/10/23/weekly_review_202401023/) / Wed/10/23
+- [ 周报 #75 - 回答 Dayu 关于独立博客的 9 个问题 ](https://www.pseudoyu.com/zh/2024/10/23/weekly_review_202401023/) / Wed/10/23
 - [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi-learning.html) / Wed/10/23
 - [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
 - [ Apple Watch 健康、运动类 App 个人横评 ](https://1q43.blog/post/7728) / Tue/10/22
