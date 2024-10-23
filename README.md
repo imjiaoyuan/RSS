@@ -1,5 +1,6 @@
 ### Posts
 <!-- Posts:START -->
+- [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi%e5%9f%ba%e7%a1%80%e7%90%86%e8%a7%a3-%e9%98%85%e8%af%bb%e7%ac%94%e8%ae%b0.html) / Wed/10/23
 - [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
 - [ Apple Watch 健康、运动类 App 个人横评 ](https://1q43.blog/post/7728) / Tue/10/22
 - [ 周报 #74 - 清迈异闻录 ](https://www.pseudoyu.com/zh/2024/10/21/weekly_review_202401021/) / Mon/10/21
@@ -38,5 +39,4 @@
 - [ 科技爱好者周刊（第 319 期）：如何拍出爆款视频 ](http://www.ruanyifeng.com/blog/2024/09/weekly-issue-319.html) / Fri/09/27
 - [ HelloGitHub 第 102 期 ](https://hellogithub.com/periodical/volume/102) / Thu/09/26
 - [ 使用 org-publish 发布博客 ](https://taxodium.ink/org-publish-blog.html) / Thu/09/26
-- [ 巴黎圣母院 2024巡演 ](https://blog.pursuitus.com/notre-dame-cathedral-2024-tour.html) / Tue/09/24
-- [ 洗澡这件小事值得被认真对待 ](https://limboy.me/posts/shower-habit) / Tue/09/24<!-- Posts:END -->
+- [ 巴黎圣母院 2024巡演 ](https://blog.pursuitus.com/notre-dame-cathedral-2024-tour.html) / Tue/09/24<!-- Posts:END -->
