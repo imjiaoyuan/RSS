@@ -16,7 +16,7 @@ jobs:
       - name: Pull Posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          max_post_count: 20
+          max_post_count: 40
           retry_count: 3
           # readme_path: "./content/following.md"
           date_format: "ddd/mm/dd"
