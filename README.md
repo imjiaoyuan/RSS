@@ -1,6 +1,6 @@
 ### Posts
 <!-- Posts:START -->
-- [ 周报 #76 - 关于 Audlting 的思考 ](https://www.pseudoyu.com/zh/2024/10/24/weekly_review_202401024/) / Wed/10/23
+- [ 周报 #76 - 关于 Adulting 的思考 ](https://www.pseudoyu.com/zh/2024/10/24/weekly_review_202401024/) / Wed/10/23
 - [ 周报 #75 - 回答 Dayu 关于独立博客的 9 个问题 ](https://www.pseudoyu.com/zh/2024/10/23/weekly_review_202401023/) / Wed/10/23
 - [ ChatGPT-AGI基础理解 阅读笔记 ](https://blog.pursuitus.com/chatgpt-agi-learning.html) / Wed/10/23
 - [ 祖母之死 ](https://blog.pursuitus.com/grandmothers-death.html) / Tue/10/22
