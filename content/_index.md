@@ -1,10 +1,19 @@
 # RSS Posts
 <!-- RSS-Posts:START -->
+- [ 从小到大，你经历过什么样的语言暴力？ ](http://m.wufazhuce.com/question/4290) / Sun/02/09
+- [ 冰糖烤梨 ](http://m.wufazhuce.com/article/6686) / Sun/02/09
+- [ VOL.4510 ](http://m.wufazhuce.com/one/4657) / Sun/02/09
+- [ 猫鱼周刊 vol. 055 城市旅游就是打卡吗？ ](https://ameow.xyz/archives/weekly-055) / Sun/02/09
 - [ 我如何使用 Apple Notes 做笔记 ](https://lutaonan.com/blog/apple-notes-and-para) / Sun/02/09
 - [ 第209期 - 又是一年 ](https://weekly.tw93.fun/posts/209-%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4/) / Sun/02/09
+- [ Neovim 插件管理器 nvim-plug ](https://wsdjeg.net/neovim-plugin-manager-nvim-plug/) / Sun/02/09
+- [ Bearblog 风格点赞按钮 ](https://anotherdayu.com/2025/6537/) / Sat/02/08
 - [ 新 MacBook 的设置和软件 ](https://lutaonan.com/blog/2024-new-macbook-setup) / Sat/02/08
 - [ 科技爱好者周刊（第 336 期）：面对 AI，互联网正在衰落 ](http://www.ruanyifeng.com/blog/2025/02/weekly-issue-336.html) / Fri/02/07
+- [ Gemini 2.0 is now available to everyone ](https://deepmind.google/discover/blog/gemini-2-0-is-now-available-to-everyone/) / Wed/02/05
+- [ Updating the Frontier Safety Framework ](https://deepmind.google/discover/blog/updating-the-frontier-safety-framework/) / Tue/02/04
 - [ AI论文评分 ](https://yufree.cn/cn/2025/02/04/ai-score-paper/) / Tue/02/04
+- [ 立春 | 2025 年 1 月小结 ](https://thirdshire.com/january-recap-2025/) / Mon/02/03
 - [ Glibc 2.41 版本会损坏 Discord 安装 ](https://www.archlinuxcn.org/glibc-241-corrupting-discord-installation/) / Mon/02/03
 - [ 周报 #86 - 用影像打败时间 ](https://www.pseudoyu.com/zh/2025/02/03/weekly_review_86/) / Sun/02/02
 - [ 周报 #85 - 京华烟云 Moment in Peking ](https://www.pseudoyu.com/zh/2025/02/03/weekly_review_85/) / Sun/02/02
@@ -14,9 +23,20 @@
 - [ 2024 年总结 - 持续迭代 ](https://tw93.fun/2025-02-02/my-2024.html) / Sun/02/02
 - [ 2024，告别盛夏 ](https://blog.ursb.me/posts/summary-2024/) / Sat/02/01
 - [ 春晚 ](https://yufree.cn/cn/2025/02/01/spring-festival-gala/) / Sat/02/01
+- [ 从 VimScipt 切换至 Lua ](https://wsdjeg.net/from-vimscript-to-lua/) / Sat/02/01
+- [ 艺术书盲盒 ](https://anotherdayu.com/2025/6516/) / Fri/01/31
+- [ 近期测试的几个软件 ](https://anotherdayu.com/2025/6509/) / Thu/01/30
+- [ PIVOT Vol.12 新年快乐呀！ ](https://anotherdayu.com/2025/6506/) / Wed/01/29
 - [ 黎明：写在《论反对日本帝国主义的策略》前 ](https://wangyurui.com/posts/qi-fu-zhi-jian-a8d9d844) / Mon/01/27
 - [ HelloGitHub 第 106 期 ](https://hellogithub.com/periodical/volume/106) / Mon/01/27
 - [ 2025.01.27: 各种链接之 - 来点艺术家的震撼 ](https://www.owenyoung.com/blog/journals/2025-01-27/) / Sun/01/26
 - [ 生信爱好者周刊（第 156 期）：说说2024你的收获吧~ ](https://openbiox.github.io/weekly/issue-156/) / Sun/01/26
 - [ 隐说 No.4  做一个聪明的“愚人” ](https://wangyurui.com/posts/yin-shuo-no-4-zuo-yi-ge-cong-ming-de-yu-ren-ec6c7e0a) / Sat/01/25
-- [ 科技爱好者周刊（第 335 期）：年底的未来已来 ](http://www.ruanyifeng.com/blog/2025/01/weekly-issue-335.html) / Fri/01/24<!-- RSS-Posts:END -->
+- [ 中式梦核——春节 ](https://ssshooter.com/2000-spring-fes/) / Sat/01/25
+- [ 博客内容分享和侵权的界限 ](https://thirdshire.com/blog-sharing-copyright/) / Sat/01/25
+- [ 怎么实现一个 AI 代码助手插件 ](https://ssshooter.com/cline/) / Fri/01/24
+- [ 科技爱好者周刊（第 335 期）：年底的未来已来 ](http://www.ruanyifeng.com/blog/2025/01/weekly-issue-335.html) / Fri/01/24
+- [ 启用 Git Commit 签名 ](https://wsdjeg.net/enable-git-commit-signing/) / Fri/01/24
+- [ 与其直接问 AI 答案，不如请 AI 找到研究这些问题最好的老师 ](https://www.owenyoung.com/blog/ai-expert-guidance/) / Thu/01/23
+- [ 从零开始制作实时搜索插件 ](https://wsdjeg.net/create-a-searching-plugin-from-scratch/) / Thu/01/23
+- [ 2025.01.22: 各种链接 ](https://www.owenyoung.com/blog/journals/2025-01-22/) / Wed/01/22<!-- RSS-Posts:END -->
