@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
+    name: Update Rss Posts
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
