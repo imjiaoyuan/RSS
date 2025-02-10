@@ -1,0 +1,21 @@
+baseurl = "https://yuanj.top/RSS"
+title = "JiaoYuan's RSS"
+languageCode = "en-us"
+theme = ["cloud"]
+
+[Params]
+  post_meta = ["date"]
+  mainSections = ["posts"]
+
+[Params.topbar]
+  subtitle = "思绪来得快去得也快，偶尔会在这里停留"
+
+[Params.sidebar]
+  home = "right"
+  widgets = ["misc", "taglist", "recent"]
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
