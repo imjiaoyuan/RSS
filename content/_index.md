@@ -1,3 +1,22 @@
 # RSS Posts
 <!-- RSS-Posts:START -->
-<!-- RSS-Posts:END -->
+- [ 我如何使用 Apple Notes 做笔记 ](https://lutaonan.com/blog/apple-notes-and-para) / Sun/02/09
+- [ 第209期 - 又是一年 ](https://weekly.tw93.fun/posts/209-%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4/) / Sun/02/09
+- [ 新 MacBook 的设置和软件 ](https://lutaonan.com/blog/2024-new-macbook-setup) / Sat/02/08
+- [ 科技爱好者周刊（第 336 期）：面对 AI，互联网正在衰落 ](http://www.ruanyifeng.com/blog/2025/02/weekly-issue-336.html) / Fri/02/07
+- [ AI论文评分 ](https://yufree.cn/cn/2025/02/04/ai-score-paper/) / Tue/02/04
+- [ Glibc 2.41 版本会损坏 Discord 安装 ](https://www.archlinuxcn.org/glibc-241-corrupting-discord-installation/) / Mon/02/03
+- [ 周报 #86 - 用影像打败时间 ](https://www.pseudoyu.com/zh/2025/02/03/weekly_review_86/) / Sun/02/02
+- [ 周报 #85 - 京华烟云 Moment in Peking ](https://www.pseudoyu.com/zh/2025/02/03/weekly_review_85/) / Sun/02/02
+- [ 周报 #84 - 想起他们 Echos of Reverie ](https://www.pseudoyu.com/zh/2025/02/03/weekly_review_84/) / Sun/02/02
+- [ 中国企业的过度负债现象 ](https://wangyurui.com/posts/qi-ye-guo-du-fu-zhai-na-xie-shi-er-0429e3e3) / Sun/02/02
+- [ 再选毛选：《论反对日本帝国主义的策略》 ](https://wangyurui.com/posts/zai-xuan-mao-xuan-lun-fan-dui-ri-ben-di-guo-zhu-344b25a4) / Sun/02/02
+- [ 2024 年总结 - 持续迭代 ](https://tw93.fun/2025-02-02/my-2024.html) / Sun/02/02
+- [ 2024，告别盛夏 ](https://blog.ursb.me/posts/summary-2024/) / Sat/02/01
+- [ 春晚 ](https://yufree.cn/cn/2025/02/01/spring-festival-gala/) / Sat/02/01
+- [ 黎明：写在《论反对日本帝国主义的策略》前 ](https://wangyurui.com/posts/qi-fu-zhi-jian-a8d9d844) / Mon/01/27
+- [ HelloGitHub 第 106 期 ](https://hellogithub.com/periodical/volume/106) / Mon/01/27
+- [ 2025.01.27: 各种链接之 - 来点艺术家的震撼 ](https://www.owenyoung.com/blog/journals/2025-01-27/) / Sun/01/26
+- [ 生信爱好者周刊（第 156 期）：说说2024你的收获吧~ ](https://openbiox.github.io/weekly/issue-156/) / Sun/01/26
+- [ 隐说 No.4  做一个聪明的“愚人” ](https://wangyurui.com/posts/yin-shuo-no-4-zuo-yi-ge-cong-ming-de-yu-ren-ec6c7e0a) / Sat/01/25
+- [ 科技爱好者周刊（第 335 期）：年底的未来已来 ](http://www.ruanyifeng.com/blog/2025/01/weekly-issue-335.html) / Fri/01/24<!-- RSS-Posts:END -->
