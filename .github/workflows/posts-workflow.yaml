@@ -16,7 +16,7 @@ jobs:
       - name: Pull Posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          max_post_count: 20
+          max_post_count: 40
           retry_count: 3
           readme_path: "./content/_index.md"
           date_format: "ddd/mm/dd"
@@ -49,4 +49,14 @@ jobs:
             https://imzm.im/feed/,
             https://hellogithub.com/rss,
             https://blog.ichr.me/atom.xml,
-            https://blog.gxres.net/atom.xml
+            https://blog.gxres.net/atom.xml,
+            https://deepmind.google/blog/rss.xml,
+            https://feedx.net/rss/one.xml,
+            https://ameow.xyz/feed.xml,
+            https://blog.stv.pm/rss/feed.xml,
+            https://anotherdayu.com/feed,
+            https://ssshooter.com/rss.xml,
+            https://thirdshire.com/index.xml,
+            https://wsdjeg.net/feed.xml,
+            https://kowyo.com/index.xml,
+            https://besscroft.com/feed
