@@ -1,5 +1,6 @@
 # RSS Posts
 <!-- RSS-Posts:START -->
+- [ 电子报与博客 ](https://justgoidea.com/posts/2025-001/) / Tue/02/11
 - [ 什么是“智性恋”？ ](http://m.wufazhuce.com/question/4291) / Mon/02/10
 - [ 告别 ](http://m.wufazhuce.com/article/6693) / Mon/02/10
 - [ VOL.4511 ](http://m.wufazhuce.com/one/4659) / Mon/02/10
@@ -38,5 +39,4 @@
 - [ 生信爱好者周刊（第 156 期）：说说2024你的收获吧~ ](https://openbiox.github.io/weekly/issue-156/) / Sun/01/26
 - [ 隐说 No.4  做一个聪明的“愚人” ](https://wangyurui.com/posts/yin-shuo-no-4-zuo-yi-ge-cong-ming-de-yu-ren-ec6c7e0a) / Sat/01/25
 - [ 中式梦核——春节 ](https://ssshooter.com/2000-spring-fes/) / Sat/01/25
-- [ 博客内容分享和侵权的界限 ](https://thirdshire.com/blog-sharing-copyright/) / Sat/01/25
-- [ 怎么实现一个 AI 代码助手插件 ](https://ssshooter.com/cline/) / Fri/01/24<!-- RSS-Posts:END -->
+- [ 博客内容分享和侵权的界限 ](https://thirdshire.com/blog-sharing-copyright/) / Sat/01/25<!-- RSS-Posts:END -->
