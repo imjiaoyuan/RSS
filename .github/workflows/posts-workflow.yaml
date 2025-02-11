@@ -50,7 +50,6 @@ jobs:
             https://hellogithub.com/rss,
             https://blog.ichr.me/atom.xml,
             https://blog.gxres.net/atom.xml,
-            https://deepmind.google/blog/rss.xml,
             https://feedx.net/rss/one.xml,
             https://ameow.xyz/feed.xml,
             https://blog.stv.pm/rss/feed.xml,
@@ -59,4 +58,6 @@ jobs:
             https://thirdshire.com/index.xml,
             https://wsdjeg.net/feed.xml,
             https://kowyo.com/index.xml,
-            https://besscroft.com/feed
+            https://besscroft.com/feed,
+            https://ddw2019.com/?feed=rss2,
+            https://cuixinxin.cn/feed
