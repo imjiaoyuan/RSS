@@ -1,0 +1,3 @@
+A simple script that uses GitHub Actions to send daily RSS updates to your email.
+
+To get started, fork this repository and customize your RSS feed list in `src/config.py`. Next, navigate to your repository's `Settings > Secrets and variables > Actions` to add the required secrets: `SENDER_EMAIL`, `SENDER_PASSWORD` (use an app-specific password, not your main password!), `SMTP_SERVER`, `SMTP_PORT`, and `RECEIVER_EMAIL`. To send to multiple recipients, provide a comma-separated list of emails in the `RECEIVER_EMAIL` secret. Once configured, the workflow will run automatically on its schedule and can also be triggered manually from the Actions tab.
