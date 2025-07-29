@@ -25,8 +25,6 @@ def get_latest_articles(feed_url, time_delta_hours=24):
     return latest_articles
 
 def create_html_content(articles_by_category):
-    category_display_names = {'blogs': 'Blog Posts', 'papers': 'Papers'}
-    today_str = datetime.now().strftime('%Y-%m-%d')
     html_content = f"""
     <html>
     <head>
@@ -36,16 +34,20 @@ def create_html_content(articles_by_category):
             h2 {{ font-size: 19px; border-bottom: 1px solid #ccc; padding-bottom: 5px;}}
             ul {{ list-style-type: disc; padding-left: 25px; }}
             li {{ margin-bottom: 12px; }}
-            a {{ color: #007BFF; text-decoration: none; font-size: 16px; }}
+            a, a:visited {{ 
+                color: #007BFF; 
+                text-decoration: none; 
+                font-size: 16px; 
+            }}
             a:hover {{ text-decoration: underline; }}
             .published-time {{ color: #888; font-size: 0.9em; }}
         </style>
     </head>
-    <body><h1>RSS Update / {today_str}</h1>
+    <body><h1>RSS Update</h1>
     """
     for category_key, articles in articles_by_category.items():
-        display_name = category_display_names.get(category_key, category_key.title())
         if articles:
+            display_name = category_key
             html_content += f"<h2>{display_name}</h2><ul>"
             for article in articles:
                 html_content += f"<li><a href='{article['link']}' target='_blank'>{article['title']}</a> <span class='published-time'>({article['published']})</span></li>"
@@ -101,7 +103,7 @@ def main():
     print("Fetch job complete.")
     if total_new_count > 0:
         print(f"Found {total_new_count} new articles. Preparing to send email.")
-        subject = f"RSS Update / {datetime.now().strftime('%Y-%m-%d')}"
+        subject = "RSS Update"
         html_body = create_html_content(all_new_articles)
         send_email(subject, html_body, EMAIL_CONFIG)
     else:
