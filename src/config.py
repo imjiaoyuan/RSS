@@ -1,5 +1,4 @@
 import os
-import json
 
 RSS_FEEDS = {
     'Blog Posts': [
@@ -44,11 +43,6 @@ RSS_FEEDS = {
         "https://blog.ferstar.org/atom.xml",
         "https://www.archlinuxcn.org/feed/",
     ],
-    # 'News': [
-    #     "https://www.solidot.org/index.rss",
-    #     "https://www.landiannews.com/feed",
-    #     "https://www.jiqizhixin.com/rss"
-    # ]
 }
 
 RECEIVER_EMAILS_LIST = [
