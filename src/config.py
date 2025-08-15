@@ -42,6 +42,12 @@ RSS_FEEDS = {
         "https://www.microsoft.com/en-us/research/feed/",
         "https://blog.ferstar.org/atom.xml",
         "https://www.archlinuxcn.org/feed/",
+        "https://onojyun.com/feed/",
+        "https://blog.ops-coffee.cn/feed.xml",
+        "https://www.geedea.pro/index.xml",
+        "https://z.arlmy.me/atom.xml",
+        "https://justinyan.me/feed",
+        "https://itsfoss.com/rss/"
     ],
 }
 
