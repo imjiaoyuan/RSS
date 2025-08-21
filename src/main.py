@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import feedparser
 import smtplib
 from datetime import datetime, timedelta, timezone
@@ -34,10 +32,10 @@ def create_html_content(articles_by_category):
             h2 {{ font-size: 19px; border-bottom: 1px solid #ccc; padding-bottom: 5px;}}
             ul {{ list-style-type: disc; padding-left: 25px; }}
             li {{ margin-bottom: 12px; }}
-            a, a:visited {{ 
-                color: #007BFF; 
-                text-decoration: none; 
-                font-size: 16px; 
+            a, a:visited {{
+                color: #007BFF;
+                text-decoration: none;
+                font-size: 16px;
             }}
             a:hover {{ text-decoration: underline; }}
             .published-time {{ color: #888; font-size: 0.9em; }}
@@ -103,9 +101,8 @@ def main():
     print("Fetch job complete.")
     if total_new_count > 0:
         print(f"Found {total_new_count} new articles. Preparing to send email.")
-        subject = "RSS Update"
         html_body = create_html_content(all_new_articles)
-        send_email(subject, html_body, EMAIL_CONFIG)
+        send_email("RSS Update", html_body, EMAIL_CONFIG)
     else:
         print("No new articles found. No email will be sent.")
 
