@@ -27,7 +27,11 @@ RSS_FEEDS = {
         "https://www.archlinuxcn.org/feed/",
         "https://justinyan.me/feed",
         "https://blog.lilydjwg.me/feed",
-        "https://forums.debiancn.org/c/5-category/5.rss"
+        "https://forums.debiancn.org/c/5-category/5.rss",
+        "https://www.lainme.com/feed",
+        "https://szclsya.me/zh-cn/index.xml",
+        "https://sh.alynx.one/atom.xml",
+        "https://bigeagle.me/index.xml"
     ],
 }
 
