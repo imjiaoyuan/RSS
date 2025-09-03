@@ -31,7 +31,9 @@ RSS_FEEDS = {
         "https://www.lainme.com/feed",
         "https://szclsya.me/zh-cn/index.xml",
         "https://sh.alynx.one/atom.xml",
-        "https://bigeagle.me/index.xml"
+        "https://bigeagle.me/index.xml",
+        "https://yufree.cn/cn/index.xml",
+        "https://www.hecaitou.com/feeds/posts/default"
     ],
 }
 
