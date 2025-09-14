@@ -25,7 +25,6 @@ RSS_FEEDS = {
         "https://www.microsoft.com/en-us/research/feed/",
         "https://blog.ferstar.org/atom.xml",
         "https://www.archlinuxcn.org/feed/",
-        "https://justinyan.me/feed",
         "https://blog.lilydjwg.me/feed",
         "https://forums.debiancn.org/c/5-category/5.rss",
         "https://www.lainme.com/feed",
@@ -33,7 +32,6 @@ RSS_FEEDS = {
         "https://sh.alynx.one/atom.xml",
         "https://bigeagle.me/index.xml",
         "https://yufree.cn/cn/index.xml",
-        "https://www.hecaitou.com/feeds/posts/default"
     ],
 }
 
