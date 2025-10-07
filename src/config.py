@@ -22,16 +22,18 @@ RSS_FEEDS = {
         "https://diygod.cc/feed",
         "https://www.darknavy.org/zh/index.xml",
         "https://tw93.fun/feed.xml",
-        "https://www.microsoft.com/en-us/research/feed/",
         "https://blog.ferstar.org/atom.xml",
         "https://www.archlinuxcn.org/feed/",
         "https://blog.lilydjwg.me/feed",
         "https://forums.debiancn.org/c/5-category/5.rss",
         "https://www.lainme.com/feed",
         "https://szclsya.me/zh-cn/index.xml",
-        "https://sh.alynx.one/atom.xml",
         "https://bigeagle.me/index.xml",
         "https://yufree.cn/cn/index.xml",
+        "https://www.tianxianzi.me/index.xml",
+        "https://thirdshire.com/index.xml",
+        "https://wsdjeg.net/feed.xml",
+        "https://wangyurui.com/feed.xml"
     ],
 }
 
