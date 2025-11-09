@@ -5,12 +5,9 @@ RSS_FEEDS = {
         "https://blog.ursb.me/feed.xml",
         "https://thiscute.world/index.xml",
         "https://polebug.github.io/atom.xml",
-        "https://imzm.im/feed/",
         "https://hellogithub.com/rss",
         "https://www.longluo.me/atom.xml",
         "https://1q43.blog/feed/",
-        "https://www.pseudoyu.com/feed.xml",
-        "https://blog.drpika.com/atom.xml",
         "https://manateelazycat.github.io/feed.xml",
         "https://www.ntiy.com/feed",
         "https://feeds.feedburner.com/ruanyifeng",
@@ -23,7 +20,6 @@ RSS_FEEDS = {
         "https://www.darknavy.org/zh/index.xml",
         "https://tw93.fun/feed.xml",
         "https://blog.ferstar.org/atom.xml",
-        "https://www.archlinuxcn.org/feed/",
         "https://blog.lilydjwg.me/feed",
         "https://forums.debiancn.org/c/5-category/5.rss",
         "https://www.lainme.com/feed",
@@ -32,7 +28,6 @@ RSS_FEEDS = {
         "https://yufree.cn/cn/index.xml",
         "https://www.tianxianzi.me/index.xml",
         "https://thirdshire.com/index.xml",
-        "https://wsdjeg.net/feed.xml",
         "https://wangyurui.com/feed.xml"
     ],
 }
