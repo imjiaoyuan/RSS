@@ -30,6 +30,14 @@ RSS_FEEDS = {
         "https://thirdshire.com/index.xml",
         "https://wangyurui.com/feed.xml"
     ],
+    'Hacker News': [
+        "https://news.ycombinator.com/rss"
+    ],
+    'News':[
+        "https://www.solidot.org/index.rss",
+        "https://www.landiannews.com/feed",
+        "https://www.ithome.com/rss"
+    ]
 }
 
 RECEIVER_EMAILS_LIST = [
