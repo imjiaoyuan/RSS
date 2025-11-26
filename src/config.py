@@ -28,12 +28,19 @@ RSS_FEEDS = {
         "https://yufree.cn/cn/index.xml",
         "https://www.tianxianzi.me/index.xml",
         "https://thirdshire.com/index.xml",
-        "https://wangyurui.com/feed.xml"
+        "https://wangyurui.com/feed.xml",
+        "https://manateelazycat.github.io/feed.xml",
+        "https://blog.cloudflare.com/zh-cn/rss",
+        "https://developer.nvidia.cn/blog/feed",
+        "https://www.microsoft.com/en-us/research/feed/",
+        "https://innei.in/feed",
+        "https://xingbianren.cn/feed.php",
+        "https://tech.meituan.com/feed/"
     ],
     'News':[
         "https://www.solidot.org/index.rss",
         "https://www.landiannews.com/feed",
-        "https://www.ithome.com/rss"
+
     ]
 }
 
