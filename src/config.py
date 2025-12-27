@@ -35,7 +35,8 @@ RSS_FEEDS = {
         "https://www.microsoft.com/en-us/research/feed/",
         "https://innei.in/feed",
         "https://xingbianren.cn/feed.php",
-        "https://tech.meituan.com/feed/"
+        "https://tech.meituan.com/feed/",
+        "https://onevcat.com/feed.xml"
     ],
     'News':[
         "https://www.solidot.org/index.rss",
