@@ -36,7 +36,9 @@ RSS_FEEDS = {
         "https://innei.in/feed",
         "https://xingbianren.cn/feed.php",
         "https://tech.meituan.com/feed/",
-        "https://onevcat.com/feed.xml"
+        "https://onevcat.com/feed.xml",
+	    "https://zhul.in/rss.xml",
+        "https://blog.dejavu.moe/index.xml"
     ],
     'News':[
         "https://www.solidot.org/index.rss",
