@@ -10,7 +10,6 @@ RSS_FEEDS = {
         "https://1q43.blog/feed/",
         "https://manateelazycat.github.io/feed.xml",
         "https://www.ntiy.com/feed",
-        "https://feeds.feedburner.com/ruanyifeng",
         "https://cyp0633.icu/index.xml",
         "https://lutaonan.com/rss.xml",
         "https://idealclover.top/feed",
