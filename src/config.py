@@ -37,24 +37,22 @@ RSS_FEEDS = {
         "https://tech.meituan.com/feed/",
         "https://onevcat.com/feed.xml",
 	    "https://zhul.in/rss.xml",
-        "https://blog.dejavu.moe/index.xml"
+        "https://blog.dejavu.moe/index.xml",
+        "https://ivonblog.com/index.xml",
+        "https://itsfoss.com/rss/",
+        "https://www.archlinuxcn.org/feed/"
     ],
     'News':[
         "https://www.solidot.org/index.rss",
         "https://www.landiannews.com/feed",
 
+    ],
+    'Publications':[
+        "https://www.nature.com/subjects/computational-biology-and-bioinformatics.rss",
+        "https://link.springer.com/search.rss?query=&search-within=Journal&facet-journal-id=13059",
+        "https://pubmed.ncbi.nlm.nih.gov/rss/search/1R9m212NERpsMq_G-syWOITUxLCNuv46XU2rLreDqgHJzYxAUh/?limit=50&utm_campaign=pubmed-2&fc=20260118082353",
+        "https://www.nature.com/ng.rss",
+        "https://www.nature.com/commsbio.rss",
+        "https://www.nature.com/nplants.rss"
     ]
-}
-
-RECEIVER_EMAILS_LIST = [
-    "imjiaoyuan@gmail.com",
-]
-
-EMAIL_CONFIG = {
-    'smtp_server': os.getenv('SMTP_SERVER'),
-    'smtp_port': int(os.getenv('SMTP_PORT', 465)),
-    'sender_email': os.getenv('SENDER_EMAIL'),
-    'sender_password': os.getenv('SENDER_PASSWORD'),
-
-    'receiver_emails': RECEIVER_EMAILS_LIST
 }
