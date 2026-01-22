@@ -1,7 +1,7 @@
 import os
 
 RSS_FEEDS = {
-    'Blog Posts': [
+    'Posts': [
         "https://blog.ursb.me/feed.xml",
         "https://thiscute.world/index.xml",
         "https://polebug.github.io/atom.xml",
@@ -24,11 +24,9 @@ RSS_FEEDS = {
         "https://www.lainme.com/feed",
         "https://szclsya.me/zh-cn/index.xml",
         "https://bigeagle.me/index.xml",
-        "https://yufree.cn/cn/index.xml",
         "https://www.tianxianzi.me/index.xml",
         "https://thirdshire.com/index.xml",
         "https://wangyurui.com/feed.xml",
-        "https://manateelazycat.github.io/feed.xml",
         "https://blog.cloudflare.com/zh-cn/rss",
         "https://developer.nvidia.cn/blog/feed",
         "https://www.microsoft.com/en-us/research/feed/",
@@ -36,23 +34,12 @@ RSS_FEEDS = {
         "https://xingbianren.cn/feed.php",
         "https://tech.meituan.com/feed/",
         "https://onevcat.com/feed.xml",
-	    "https://zhul.in/rss.xml",
+        "https://zhul.in/rss.xml",
         "https://blog.dejavu.moe/index.xml",
         "https://ivonblog.com/index.xml",
         "https://itsfoss.com/rss/",
-        "https://www.archlinuxcn.org/feed/"
-    ],
-    'News':[
+        "https://www.archlinuxcn.org/feed/",
         "https://www.solidot.org/index.rss",
-        "https://www.landiannews.com/feed",
-
-    ],
-    'Publications':[
-        "https://www.nature.com/subjects/computational-biology-and-bioinformatics.rss",
-        "https://link.springer.com/search.rss?query=&search-within=Journal&facet-journal-id=13059",
-        "https://pubmed.ncbi.nlm.nih.gov/rss/search/1R9m212NERpsMq_G-syWOITUxLCNuv46XU2rLreDqgHJzYxAUh/?limit=50&utm_campaign=pubmed-2&fc=20260118082353",
-        "https://www.nature.com/ng.rss",
-        "https://www.nature.com/commsbio.rss",
-        "https://www.nature.com/nplants.rss"
+        "https://blog.codingnow.com/atom.xml"
     ]
 }
