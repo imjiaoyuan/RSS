@@ -29,7 +29,6 @@ RSS_FEEDS = {
         "https://wangyurui.com/feed.xml",
         "https://blog.cloudflare.com/zh-cn/rss",
         "https://developer.nvidia.cn/blog/feed",
-        "https://www.microsoft.com/en-us/research/feed/",
         "https://innei.in/feed",
         "https://xingbianren.cn/feed.php",
         "https://tech.meituan.com/feed/",
@@ -40,6 +39,10 @@ RSS_FEEDS = {
         "https://itsfoss.com/rss/",
         "https://www.archlinuxcn.org/feed/",
         "https://www.solidot.org/index.rss",
-        "https://blog.codingnow.com/atom.xml"
+        "https://blog.codingnow.com/atom.xml",
+        "https://sspai.com/feed",
+        "https://www.bboy.app/atom.xml",
+        "https://www.ruanyifeng.com/blog/atom.xml",
+        "https://blog.devtang.com/atom.xml"
     ]
 }
