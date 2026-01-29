@@ -27,8 +27,6 @@ RSS_FEEDS = {
         "https://www.tianxianzi.me/index.xml",
         "https://thirdshire.com/index.xml",
         "https://wangyurui.com/feed.xml",
-        "https://blog.cloudflare.com/zh-cn/rss",
-        "https://developer.nvidia.cn/blog/feed",
         "https://innei.in/feed",
         "https://xingbianren.cn/feed.php",
         "https://tech.meituan.com/feed/",
@@ -36,13 +34,16 @@ RSS_FEEDS = {
         "https://zhul.in/rss.xml",
         "https://blog.dejavu.moe/index.xml",
         "https://ivonblog.com/index.xml",
-        "https://itsfoss.com/rss/",
         "https://www.archlinuxcn.org/feed/",
         "https://www.solidot.org/index.rss",
         "https://blog.codingnow.com/atom.xml",
-        "https://sspai.com/feed",
         "https://www.bboy.app/atom.xml",
         "https://www.ruanyifeng.com/blog/atom.xml",
-        "https://blog.devtang.com/atom.xml"
+        "https://blog.devtang.com/atom.xml",
+        "https://www.pseudoyu.com/feed.xml",
+        "https://immmmm.com/feed",
+        "https://www.tianxianzi.me/index.xml",
+        "https://hutusi.com/feed.xml",
+        "https://anotherdayu.com/feed/"
     ]
 }
