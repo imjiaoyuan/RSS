@@ -33,17 +33,15 @@ RSS_FEEDS = {
         "https://onevcat.com/feed.xml",
         "https://zhul.in/rss.xml",
         "https://blog.dejavu.moe/index.xml",
-        "https://ivonblog.com/index.xml",
         "https://www.archlinuxcn.org/feed/",
         "https://www.solidot.org/index.rss",
         "https://blog.codingnow.com/atom.xml",
-        "https://www.bboy.app/atom.xml",
         "https://www.ruanyifeng.com/blog/atom.xml",
         "https://blog.devtang.com/atom.xml",
         "https://www.pseudoyu.com/feed.xml",
         "https://immmmm.com/feed",
         "https://www.tianxianzi.me/index.xml",
         "https://hutusi.com/feed.xml",
-        "https://anotherdayu.com/feed/"
+        "https://anotherdayu.com/feed/",
     ]
 }
