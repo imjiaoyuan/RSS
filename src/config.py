@@ -43,5 +43,11 @@ RSS_FEEDS = {
         "https://www.tianxianzi.me/index.xml",
         "https://hutusi.com/feed.xml",
         "https://anotherdayu.com/feed/",
+        "https://raw.githubusercontent.com/yihong0618/gitblog/master/feed.xml",
+        "https://justgoidea.com/rss.xml",
+        "https://simonwillison.net/atom/everything/",
+        "https://blog.linuxmint.com/?feed=rss2",
+        "https://caveallegory.cn/feed/",
+        "https://darmau.co/zh/article/rss.xml"
     ]
 }
