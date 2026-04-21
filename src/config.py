@@ -1,7 +1,7 @@
 import os
 
 RSS_FEEDS = {
-    'Posts': [
+    'Blogs': [
         "https://blog.ursb.me/feed.xml",
         "https://thiscute.world/index.xml",
         "https://polebug.github.io/atom.xml",
@@ -34,7 +34,6 @@ RSS_FEEDS = {
         "https://zhul.in/rss.xml",
         "https://blog.dejavu.moe/index.xml",
         "https://www.archlinuxcn.org/feed/",
-        "https://www.solidot.org/index.rss",
         "https://blog.codingnow.com/atom.xml",
         "https://www.ruanyifeng.com/blog/atom.xml",
         "https://blog.devtang.com/atom.xml",
@@ -48,6 +47,18 @@ RSS_FEEDS = {
         "https://simonwillison.net/atom/everything/",
         "https://blog.linuxmint.com/?feed=rss2",
         "https://caveallegory.cn/feed/",
-        "https://darmau.co/zh/article/rss.xml"
+        "https://darmau.co/zh/article/rss.xml",
+        "https://sspai.com/feed"
+    ],
+    'News':[
+        "https://www.solidot.org/index.rss",
+        "https://www.landiannews.com/feed"
+    ],
+    'Papers':[
+        "https://www.nature.com/subjects/genetics.rss",
+        "https://www.nature.com/subjects/mathematics-and-computing.rss",
+        "https://www.nature.com/subjects/scientific-community.rss",
+        "https://www.nature.com/subjects/history.rss",
+        "https://www.nature.com/subjects/psychology.rss"
     ]
 }
