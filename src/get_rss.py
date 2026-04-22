@@ -21,16 +21,21 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
-def get_latest_articles(feed_url, time_delta_hours=72):
+def get_latest_articles(feed_url, time_delta_hours=144):
     latest_articles = []
     try:
         feed = feedparser.parse(feed_url)
-        time_threshold = datetime.now(timezone.utc) - timedelta(hours=time_delta_hours)
+        now = datetime.now(timezone.utc)
+        time_threshold = now - timedelta(hours=time_delta_hours)
+        
         for entry in feed.entries:
             published_time = entry.get('published_parsed')
             if not published_time:
                 continue
             published_dt = datetime(*published_time[:6], tzinfo=timezone.utc)
+            
+            if published_dt > now:
+                continue
             if published_dt >= time_threshold:
                 latest_articles.append({
                     'title': entry.title,
@@ -48,12 +53,18 @@ def generate_html(articles_by_date, output_path):
     content_parts = []
     today_str = datetime.now(timezone.utc).strftime('%Y-%m-%d')
     
-    for date_str in sorted(articles_by_date.keys(), reverse=True):
+    sorted_dates = sorted(articles_by_date.keys(), key=lambda x: datetime.strptime(x, '%Y-%m-%d'), reverse=True)
+    
+    if today_str in sorted_dates:
+        sorted_dates.remove(today_str)
+        sorted_dates.insert(0, today_str)
+    
+    for date_str in sorted_dates:
         articles_by_category = articles_by_date[date_str]
         date_display = f"{date_str} (today)" if date_str == today_str else f"{date_str}"
         content_parts.append(f"<h2>{date_display}</h2>")
         
-        for category in articles_by_category.keys():
+        for category in sorted(articles_by_category.keys()):
             articles = articles_by_category[category]
             content_parts.append(f"<h3>{category}</h3>")
             content_parts.append("<ul>")
