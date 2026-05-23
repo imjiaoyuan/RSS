@@ -39,26 +39,29 @@ RSS_FEEDS = {
         "https://blog.devtang.com/atom.xml",
         "https://www.pseudoyu.com/feed.xml",
         "https://immmmm.com/feed",
-        "https://www.tianxianzi.me/index.xml",
         "https://hutusi.com/feed.xml",
         "https://anotherdayu.com/feed/",
         "https://raw.githubusercontent.com/yihong0618/gitblog/master/feed.xml",
         "https://justgoidea.com/rss.xml",
-        "https://simonwillison.net/atom/everything/",
         "https://blog.linuxmint.com/?feed=rss2",
         "https://caveallegory.cn/feed/",
         "https://darmau.co/zh/article/rss.xml",
-        "https://sspai.com/feed"
-    ],
-    'News':[
         "https://www.solidot.org/index.rss",
-        "https://www.landiannews.com/feed"
+        "https://blog.cloudflare.com/rss",
+        "https://devblogs.microsoft.com/feed",
+        "https://huggingface.co/blog/feed.xml",
+        "https://www.anaconda.com/feed",
+        "https://towardsdatascience.com/feed/",
+        "https://karpathy.github.io/feed.xml",
+        "https://www.phoronix.com/rss.php",
+        "https://www.science.org/rss/news_current.xml",
+        "https://www.quantamagazine.org/feed/",
+        "https://yihui.org/en/index.xml",
+        "https://yihui.org/cn/index.xml"
     ],
     'Papers':[
-        "https://www.nature.com/subjects/genetics.rss",
-        "https://www.nature.com/subjects/mathematics-and-computing.rss",
-        "https://www.nature.com/subjects/scientific-community.rss",
-        "https://www.nature.com/subjects/history.rss",
-        "https://www.nature.com/subjects/psychology.rss"
+        "https://www.nature.com/natmachintell.rss",
+        "https://www.nature.com/natcomputsci.rss",
+        "https://journals.plos.org/ploscompbiol/feed/atom"
     ]
 }
