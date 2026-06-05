@@ -57,7 +57,13 @@ RSS_FEEDS = {
         "https://www.science.org/rss/news_current.xml",
         "https://www.quantamagazine.org/feed/",
         "https://yihui.org/en/index.xml",
-        "https://yihui.org/cn/index.xml"
+        "https://yihui.org/cn/index.xml",
+        "https://www.landian.news/feed",
+        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=good&feedformat=atom",
+        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom",
+        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&feedformat=atom",
+        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=dyk&feedformat=atom",
+        ""
     ],
     'Papers':[
         "https://www.nature.com/natmachintell.rss",

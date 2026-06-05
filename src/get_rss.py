@@ -23,8 +23,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         h1 {{ font-size: 2em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 2px solid #e0e0e0; }}
         h2 {{ font-size: 1.5em; margin: 30px 0 15px; color: #555; }}
         h3 {{ font-size: 1.2em; margin: 20px 0 10px; color: #666; }}
-        ul {{ list-style: none; margin-bottom: 20px; }}
-        li {{ padding: 8px 0; border-bottom: 1px solid #f0f0f0; }}
+        ul {{ list-style: none; margin-bottom: 24px; }}
+        li {{ padding: 10px 0; border-bottom: 1px solid #f0f0f0; line-height: 1.8; }}
         li:last-child {{ border-bottom: none; }}
         a {{ color: #0066cc; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
@@ -48,12 +48,20 @@ def get_latest_articles(feed_url, time_delta_hours=144):
         time_threshold = now - timedelta(hours=time_delta_hours)
         china_tz = timezone(timedelta(hours=8))
 
-        for entry in feed.entries:
-            published_time = entry.get('published_parsed')
+        sorted_entries = sorted(
+            feed.entries,
+            key=lambda e: e.get('published_parsed') or e.get('updated_parsed') or (1, 1, 1, 0, 0, 0, 0, 1, 0),
+            reverse=True
+        )
+
+        for entry in sorted_entries:
+            published_time = entry.get('published_parsed') or entry.get('updated_parsed')
             if not published_time:
                 continue
             published_dt = datetime(*published_time[:6], tzinfo=timezone.utc)
 
+            if not entry.title or not entry.title.strip():
+                continue
             if published_dt > now:
                 continue
             if published_dt >= time_threshold:
