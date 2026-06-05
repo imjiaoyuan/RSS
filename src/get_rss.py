@@ -1,5 +1,7 @@
 import os
 import sys
+import html
+import urllib.request
 import feedparser
 from datetime import datetime, timedelta, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -7,6 +9,9 @@ import logging
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from config import RSS_FEEDS
+
+FEED_TIMEOUT = 30
+USER_AGENT = 'Mozilla/5.0 (compatible; RSS-Reader/1.0)'
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -43,7 +48,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 def get_latest_articles(feed_url, time_delta_hours=144):
     latest_articles = []
     try:
-        feed = feedparser.parse(feed_url)
+        req = urllib.request.Request(feed_url, headers={'User-Agent': USER_AGENT})
+        with urllib.request.urlopen(req, timeout=FEED_TIMEOUT) as response:
+            feed = feedparser.parse(response.read())
         now = datetime.now(timezone.utc)
         time_threshold = now - timedelta(hours=time_delta_hours)
         china_tz = timezone(timedelta(hours=8))
@@ -106,14 +113,14 @@ def generate_html(articles_by_date, output_path):
                 content_parts.append(f"<h3>{category}</h3>")
             content_parts.append("<ul>")
             for article in sorted(articles, key=lambda x: x['published_dt'], reverse=True):
-                content_parts.append(f"<li><a href='{article['link']}'>{article['title']}</a> <span>({article['time_str']})</span></li>")
+                content_parts.append(f"<li><a href='{html.escape(article['link'])}'>{html.escape(article['title'])}</a> <span>({article['time_str']})</span></li>")
             content_parts.append("</ul>")
 
     full_content = "".join(content_parts) if content_parts else "<p>No articles found in the last 6 days.</p>"
-    html = HTML_TEMPLATE.replace('{title}', 'RSS Page').replace('{content}', full_content)
+    html_output = HTML_TEMPLATE.replace('{title}', 'RSS Page').replace('{content}', full_content)
 
     with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(html)
+        f.write(html_output)
 
 def main():
     if len(sys.argv) < 2:
@@ -129,7 +136,8 @@ def main():
     feed_tasks = []
     for category, feeds in RSS_FEEDS.items():
         for feed_url in feeds:
-            feed_tasks.append((category, feed_url))
+            if feed_url.strip():
+                feed_tasks.append((category, feed_url))
 
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_feed = {executor.submit(get_latest_articles, feed_url): (category, feed_url)
