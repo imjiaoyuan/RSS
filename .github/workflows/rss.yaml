@@ -27,7 +27,7 @@ jobs:
         uses: astral-sh/setup-uv@v4
 
       - name: Install dependencies
-        run: uv pip install --system -r requirements.txt
+        run: uv pip install --system feedparser
 
       - name: Create output directory
         run: mkdir public
