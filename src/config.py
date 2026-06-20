@@ -52,21 +52,22 @@ RSS_FEEDS = {
         "https://www.anaconda.com/feed",
         "https://towardsdatascience.com/feed/",
         "https://karpathy.github.io/feed.xml",
-        "https://www.phoronix.com/rss.php",
         "https://www.science.org/rss/news_current.xml",
         "https://www.quantamagazine.org/feed/",
         "https://yihui.org/en/index.xml",
         "https://yihui.org/cn/index.xml",
         "https://www.landian.news/feed",
-        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=good&feedformat=atom",
-        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom",
-        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&feedformat=atom",
-        "https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=dyk&feedformat=atom",
-        ""
+        "https://www.aloxaf.com/atom.xml",
+        "https://deepzz.com/rss.html",
+        "https://deepmind.google/blog/rss.xml",
+        "https://openai.com/news/rss.xml"
+
     ],
     'Papers':[
         "https://www.nature.com/natmachintell.rss",
         "https://www.nature.com/natcomputsci.rss",
-        "https://journals.plos.org/ploscompbiol/feed/atom"
+        "https://journals.plos.org/ploscompbiol/feed/atom",
+        "https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics",
+        "https://connect.biorxiv.org/biorxiv_xml.php?subject=genomics"
     ]
 }
