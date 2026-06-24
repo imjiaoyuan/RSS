@@ -20,7 +20,6 @@ RSS_FEEDS = {
         "https://tw93.fun/feed.xml",
         "https://blog.ferstar.org/index.xml",
         "https://blog.lilydjwg.me/feed",
-        "https://forums.debiancn.org/c/5-category/5.rss",
         "https://www.lainme.com/feed",
         "https://szclsya.me/zh-cn/index.xml",
         "https://bigeagle.me/index.xml",
@@ -39,10 +38,8 @@ RSS_FEEDS = {
         "https://www.pseudoyu.com/feed.xml",
         "https://immmmm.com/feed",
         "https://hutusi.com/feed.xml",
-        "https://anotherdayu.com/feed/",
         "https://raw.githubusercontent.com/yihong0618/gitblog/master/feed.xml",
         "https://justgoidea.com/rss.xml",
-        "https://blog.linuxmint.com/?feed=rss2",
         "https://caveallegory.cn/feed/",
         "https://darmau.co/zh/article/rss.xml",
         "https://www.solidot.org/index.rss",
@@ -56,18 +53,10 @@ RSS_FEEDS = {
         "https://www.quantamagazine.org/feed/",
         "https://yihui.org/en/index.xml",
         "https://yihui.org/cn/index.xml",
-        "https://www.landian.news/feed",
         "https://www.aloxaf.com/atom.xml",
         "https://deepzz.com/rss.html",
         "https://deepmind.google/blog/rss.xml",
         "https://openai.com/news/rss.xml"
 
     ],
-    'Papers':[
-        "https://www.nature.com/natmachintell.rss",
-        "https://www.nature.com/natcomputsci.rss",
-        "https://journals.plos.org/ploscompbiol/feed/atom",
-        "https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics",
-        "https://connect.biorxiv.org/biorxiv_xml.php?subject=genomics"
-    ]
 }
