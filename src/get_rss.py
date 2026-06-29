@@ -12,38 +12,10 @@ from config import RSS_FEEDS
 
 FEED_TIMEOUT = 30
 USER_AGENT = 'Mozilla/5.0 (compatible; RSS-Reader/1.0)'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-HTML_TEMPLATE = """<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
-    <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }}
-        .container {{ max-width: 1200px; margin: 0 auto; padding: 20px; background: white; min-height: 100vh; }}
-        h1 {{ font-size: 2em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 2px solid #e0e0e0; }}
-        h2 {{ font-size: 1.5em; margin: 30px 0 15px; color: #555; }}
-        h3 {{ font-size: 1.2em; margin: 20px 0 10px; color: #666; }}
-        ul {{ list-style: none; margin-bottom: 24px; }}
-        li {{ padding: 10px 0; border-bottom: 1px solid #f0f0f0; line-height: 1.8; }}
-        li:last-child {{ border-bottom: none; }}
-        a {{ color: #0066cc; text-decoration: none; }}
-        a:hover {{ text-decoration: underline; }}
-        span {{ color: #999; font-size: 0.9em; margin-left: 8px; }}
-        @media (max-width: 768px) {{ .container {{ padding: 15px; }} h1 {{ font-size: 1.5em; }} }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>{title}</h1>
-        {content}
-    </div>
-</body>
-</html>"""
 
 def get_latest_articles(feed_url, time_delta_hours=144):
     latest_articles = []
@@ -85,42 +57,65 @@ def get_latest_articles(feed_url, time_delta_hours=144):
         logging.error(f"Failed to fetch {feed_url}: {e}")
     return latest_articles
 
+
+def render_articles(articles):
+    """Render a list of articles as <li> items."""
+    parts = []
+    for a in sorted(articles, key=lambda x: x['published_dt'], reverse=True):
+        parts.append(
+            f"<li><a href='{html.escape(a['link'])}'>{html.escape(a['title'])}</a>"
+            f" <span>({a['time_str']})</span></li>"
+        )
+    return "\n".join(parts)
+
+
 def generate_html(articles_by_date, output_path):
-    content_parts = []
     china_tz = timezone(timedelta(hours=8))
     today_str = datetime.now(china_tz).strftime('%Y-%m-%d')
 
-    sorted_dates = sorted(articles_by_date.keys(), key=lambda x: datetime.strptime(x, '%Y-%m-%d'), reverse=True)
+    sorted_dates = sorted(articles_by_date.keys(),
+                          key=lambda x: datetime.strptime(x, '%Y-%m-%d'), reverse=True)
 
     if today_str in sorted_dates:
         sorted_dates.remove(today_str)
         sorted_dates.insert(0, today_str)
     elif sorted_dates:
-        content_parts.append(f"<h2>{today_str} (today)</h2>")
-        content_parts.append("<p>No updates at this time</p>")
+        sorted_dates.insert(0, today_str)
 
+    sections = []
     for date_str in sorted_dates:
-        articles_by_category = articles_by_date[date_str]
-        date_display = f"{date_str} (today)" if date_str == today_str else f"{date_str}"
-        content_parts.append(f"<h2>{date_display}</h2>")
+        sections.append(f'<section data-date="{date_str}">')
 
-        categories = sorted(articles_by_category.keys())
-        show_category_labels = len(categories) > 1
+        if date_str == today_str and date_str not in articles_by_date:
+            sections.append("<p>No updates yet.</p>")
+        else:
+            by_cat = articles_by_date.get(date_str, {})
+            cats = sorted(by_cat.keys())
+            show_cat = len(cats) > 1
 
-        for category in categories:
-            articles = articles_by_category[category]
-            if show_category_labels:
-                content_parts.append(f"<h3>{category}</h3>")
-            content_parts.append("<ul>")
-            for article in sorted(articles, key=lambda x: x['published_dt'], reverse=True):
-                content_parts.append(f"<li><a href='{html.escape(article['link'])}'>{html.escape(article['title'])}</a> <span>({article['time_str']})</span></li>")
-            content_parts.append("</ul>")
+            for cat in cats:
+                if show_cat:
+                    sections.append(f"<h3>{cat}</h3>")
+                sections.append("<ul>")
+                sections.append(render_articles(by_cat[cat]))
+                sections.append("</ul>")
 
-    full_content = "".join(content_parts) if content_parts else "<p>No articles found in the last 6 days.</p>"
-    html_output = HTML_TEMPLATE.replace('{title}', 'RSS Page').replace('{content}', full_content)
+        sections.append("</section>")
+
+    full_content = "\n".join(sections) if sections else "<p>No articles found in the last 6 days.</p>"
+
+    with open(os.path.join(SCRIPT_DIR, 'template.html'), 'r', encoding='utf-8') as f:
+        template = f.read()
+    with open(os.path.join(SCRIPT_DIR, 'style.css'), 'r', encoding='utf-8') as f:
+        style = f.read()
+    with open(os.path.join(SCRIPT_DIR, 'pagination.js'), 'r', encoding='utf-8') as f:
+        script = f.read()
+
+    html_output = template.replace('{style}', style).replace('{script}', script).replace('{content}', full_content)
 
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_output)
+
 
 def main():
     if len(sys.argv) < 2:
@@ -159,6 +154,7 @@ def main():
                 logging.error(f"Error processing {feed_url}: {e}")
 
     generate_html(articles_by_date, output_file)
+
 
 if __name__ == '__main__':
     main()

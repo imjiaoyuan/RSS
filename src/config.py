@@ -9,6 +9,7 @@ RSS_FEEDS = {
         "https://www.longluo.me/atom.xml",
         "https://www.bmpi.dev/index.xml",
         "https://oldj.net/rss.xml",
+        "https://wsh233.cn/feed.xml",
         "https://1q43.blog/feed/",
         "https://manateelazycat.github.io/feed.xml",
         "https://www.ntiy.com/feed",
