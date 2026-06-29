@@ -1,5 +1,7 @@
 import os
 import sys
+import ssl
+import time
 import html
 import urllib.request
 import feedparser
@@ -9,20 +11,39 @@ import logging
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from config import RSS_FEEDS
+from routes import load_routes
 
 FEED_TIMEOUT = 30
-USER_AGENT = 'Mozilla/5.0 (compatible; RSS-Reader/1.0)'
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+MAX_RETRIES = 3
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+_ssl_context = ssl.create_default_context()
+_ssl_context.check_hostname = False
+_ssl_context.verify_mode = ssl.CERT_NONE
+
+
+def _fetch_url(url, timeout=FEED_TIMEOUT):
+    last_err = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+            with urllib.request.urlopen(req, timeout=timeout, context=_ssl_context) as resp:
+                return resp.read()
+        except Exception as e:
+            last_err = e
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(2 ** attempt)
+    raise last_err
 
 
 def get_latest_articles(feed_url, time_delta_hours=144):
     latest_articles = []
     try:
-        req = urllib.request.Request(feed_url, headers={'User-Agent': USER_AGENT})
-        with urllib.request.urlopen(req, timeout=FEED_TIMEOUT) as response:
-            feed = feedparser.parse(response.read())
+        data = _fetch_url(feed_url)
+        feed = feedparser.parse(data)
         now = datetime.now(timezone.utc)
         time_threshold = now - timedelta(hours=time_delta_hours)
         china_tz = timezone(timedelta(hours=8))
@@ -59,7 +80,6 @@ def get_latest_articles(feed_url, time_delta_hours=144):
 
 
 def render_articles(articles):
-    """Render a list of articles as <li> items."""
     parts = []
     for a in sorted(articles, key=lambda x: x['published_dt'], reverse=True):
         parts.append(
@@ -128,11 +148,20 @@ def main():
 
     articles_by_date = {}
 
+    routes = load_routes()
+
     feed_tasks = []
+    route_tasks = []
     for category, feeds in RSS_FEEDS.items():
         for feed_url in feeds:
-            if feed_url.strip():
+            if not feed_url.strip():
+                continue
+            if feed_url.startswith("http://") or feed_url.startswith("https://"):
                 feed_tasks.append((category, feed_url))
+            elif feed_url in routes:
+                route_tasks.append((category, feed_url))
+            else:
+                logging.warning(f"Unknown feed or route: {feed_url}")
 
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_feed = {executor.submit(get_latest_articles, feed_url): (category, feed_url)
@@ -152,6 +181,22 @@ def main():
                     articles_by_date[date_str][category].append(article)
             except Exception as e:
                 logging.error(f"Error processing {feed_url}: {e}")
+
+    for category, route_name in route_tasks:
+        try:
+            info = routes[route_name]
+            articles = info["fetch"](info["config"])
+            for article in articles:
+                article['category'] = category
+                date_str = article['date_str']
+                if date_str not in articles_by_date:
+                    articles_by_date[date_str] = {}
+                if category not in articles_by_date[date_str]:
+                    articles_by_date[date_str][category] = []
+                articles_by_date[date_str][category].append(article)
+            logging.info(f"Route '{route_name}': {len(articles)} articles")
+        except Exception as e:
+            logging.error(f"Route '{route_name}' failed: {e}")
 
     generate_html(articles_by_date, output_file)
 
