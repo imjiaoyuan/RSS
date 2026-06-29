@@ -7,6 +7,8 @@ RSS_FEEDS = {
         "https://polebug.github.io/atom.xml",
         "https://hellogithub.com/rss",
         "https://www.longluo.me/atom.xml",
+        "https://www.bmpi.dev/index.xml",
+        "https://oldj.net/rss.xml",
         "https://1q43.blog/feed/",
         "https://manateelazycat.github.io/feed.xml",
         "https://www.ntiy.com/feed",
@@ -42,7 +44,6 @@ RSS_FEEDS = {
         "https://justgoidea.com/rss.xml",
         "https://caveallegory.cn/feed/",
         "https://darmau.co/zh/article/rss.xml",
-        "https://www.solidot.org/index.rss",
         "https://blog.cloudflare.com/rss",
         "https://devblogs.microsoft.com/feed",
         "https://huggingface.co/blog/feed.xml",
@@ -58,5 +59,10 @@ RSS_FEEDS = {
         "https://deepmind.google/blog/rss.xml",
         "https://openai.com/news/rss.xml"
 
+    ],
+    'News': [
+        "https://feed.appinn.com/",
+        "https://www.qbitai.com/feed",
+        "https://www.solidot.org/index.rss",
     ],
 }
