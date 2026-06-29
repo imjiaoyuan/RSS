@@ -113,6 +113,9 @@ def fetch(config: dict | None = None) -> list[dict]:
         raise last_err
 
     articles = _parse_articles(html)
+    now = datetime.now(UTC_TZ)
+    cutoff = now - timedelta(hours=144)
+    articles = [a for a in articles if a["published_dt"] >= cutoff]
     logger.info(f"sspai_matrix: fetched {len(articles)} articles")
     return articles
 
