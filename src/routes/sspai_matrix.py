@@ -1,11 +1,10 @@
 import re
-import ssl
-import time
 import logging
-import urllib.request
 from datetime import datetime, timezone, timedelta
 
 logger = logging.getLogger(__name__)
+
+from utils import fetch_url, FEED_TIMEOUT
 
 ROUTE_CONFIG = {
     "name": "sspai_matrix",
@@ -14,15 +13,8 @@ ROUTE_CONFIG = {
     "description": "少数派 Matrix 社区",
 }
 
-FEED_TIMEOUT = 30
-USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-MAX_RETRIES = 3
 CHINA_TZ = timezone(timedelta(hours=8))
 UTC_TZ = timezone.utc
-
-_ssl_context = ssl.create_default_context()
-_ssl_context.check_hostname = False
-_ssl_context.verify_mode = ssl.CERT_NONE
 
 
 def _parse_date(raw: str) -> datetime | None:
@@ -98,19 +90,7 @@ def _parse_articles(html: str) -> list[dict]:
 
 def fetch(config: dict | None = None) -> list[dict]:
     url = (config or ROUTE_CONFIG)["url"]
-    last_err = None
-    for attempt in range(MAX_RETRIES):
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(req, timeout=FEED_TIMEOUT, context=_ssl_context) as resp:
-                html = resp.read().decode("utf-8")
-            break
-        except Exception as e:
-            last_err = e
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(2 ** attempt)
-    else:
-        raise last_err
+    html = fetch_url(url, timeout=FEED_TIMEOUT).decode("utf-8")
 
     articles = _parse_articles(html)
     now = datetime.now(UTC_TZ)
