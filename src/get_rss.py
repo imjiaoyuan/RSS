@@ -1,9 +1,7 @@
 import os
 import sys
-import ssl
 import time
 import html
-import urllib.request
 import feedparser
 from datetime import datetime, timedelta, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -12,31 +10,11 @@ import logging
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from config import RSS_FEEDS
 from routes import load_routes
+from utils import fetch_url as _fetch_url, FEED_TIMEOUT
 
-FEED_TIMEOUT = 30
-USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-MAX_RETRIES = 3
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-_ssl_context = ssl.create_default_context()
-_ssl_context.check_hostname = False
-_ssl_context.verify_mode = ssl.CERT_NONE
-
-
-def _fetch_url(url, timeout=FEED_TIMEOUT):
-    last_err = None
-    for attempt in range(MAX_RETRIES):
-        try:
-            req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-            with urllib.request.urlopen(req, timeout=timeout, context=_ssl_context) as resp:
-                return resp.read()
-        except Exception as e:
-            last_err = e
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(2 ** attempt)
-    raise last_err
 
 
 def get_latest_articles(feed_url, time_delta_hours=144):
@@ -55,25 +33,30 @@ def get_latest_articles(feed_url, time_delta_hours=144):
         )
 
         for entry in sorted_entries:
-            published_time = entry.get('published_parsed') or entry.get('updated_parsed')
-            if not published_time:
-                continue
-            published_dt = datetime(*published_time[:6], tzinfo=timezone.utc)
+            try:
+                published_time = entry.get('published_parsed') or entry.get('updated_parsed')
+                if not published_time:
+                    continue
+                published_dt = datetime(*published_time[:6], tzinfo=timezone.utc)
 
-            if not entry.title or not entry.title.strip():
+                title = (entry.get('title') or '').strip()
+                link = entry.get('link', '')
+                if not title or not link:
+                    continue
+                if published_dt > now:
+                    continue
+                if published_dt >= time_threshold:
+                    china_dt = published_dt.astimezone(china_tz)
+                    latest_articles.append({
+                        'title': title,
+                        'link': link,
+                        'published_dt': published_dt,
+                        'date_str': china_dt.strftime('%Y-%m-%d'),
+                        'time_str': china_dt.strftime('%H:%M'),
+                        'category': None
+                    })
+            except Exception:
                 continue
-            if published_dt > now:
-                continue
-            if published_dt >= time_threshold:
-                china_dt = published_dt.astimezone(china_tz)
-                latest_articles.append({
-                    'title': entry.title,
-                    'link': entry.link,
-                    'published_dt': published_dt,
-                    'date_str': china_dt.strftime('%Y-%m-%d'),
-                    'time_str': china_dt.strftime('%H:%M'),
-                    'category': None
-                })
     except Exception as e:
         logging.error(f"Failed to fetch {feed_url}: {e}")
     return latest_articles
@@ -107,15 +90,11 @@ def generate_html(articles_by_date, output_path):
         sections.append(f'<section data-date="{date_str}">')
 
         if date_str == today_str and date_str not in articles_by_date:
-            sections.append("<p>No updates yet.</p>")
+            sections.append("<p>No articles published today.</p>")
         else:
             by_cat = articles_by_date.get(date_str, {})
-            cats = sorted(by_cat.keys())
-            show_cat = len(cats) > 1
-
-            for cat in cats:
-                if show_cat:
-                    sections.append(f"<h3>{cat}</h3>")
+            for cat in sorted(by_cat.keys()):
+                sections.append(f"<h3>{cat}</h3>")
                 sections.append("<ul>")
                 sections.append(render_articles(by_cat[cat]))
                 sections.append("</ul>")
@@ -147,6 +126,7 @@ def main():
     output_file = os.path.join(output_dir, 'index.html')
 
     articles_by_date = {}
+    seen_links = set()
 
     routes = load_routes()
 
@@ -172,6 +152,9 @@ def main():
             try:
                 articles = future.result()
                 for article in articles:
+                    if article['link'] in seen_links:
+                        continue
+                    seen_links.add(article['link'])
                     article['category'] = category
                     date_str = article['date_str']
                     if date_str not in articles_by_date:
@@ -187,6 +170,9 @@ def main():
             info = routes[route_name]
             articles = info["fetch"](info["config"])
             for article in articles:
+                if article['link'] in seen_links:
+                    continue
+                seen_links.add(article['link'])
                 article['category'] = category
                 date_str = article['date_str']
                 if date_str not in articles_by_date:
