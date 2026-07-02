@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS</title>
+    <style>* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+    background: #ffffff;
+    color: #24292f;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+.page-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrap > * { width: 100%; }
+
+.page-wrap main { flex: 1; }
+
+/* header — matches blog's .top */
+.top {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.brand {
+    color: #24292f;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav { display: flex; gap: 13px; }
+
+nav button {
+    background: none;
+    border: none;
+    color: #24292f;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+}
+
+nav button:hover:not(:disabled) {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+nav button:disabled { color: #8d96a0; cursor: default; }
+
+/* main content */
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 14px 16px 16px;
+}
+
+h3 {
+    font-size: 1.05em;
+    margin: 14px 0 4px;
+    color: #57606a;
+}
+
+#date-label {
+    font-size: 14px;
+    color: #57606a;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d0d7de;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid #d0d7de;
+    content-visibility: auto;
+    contain-intrinsic-size: 28px;
+}
+
+li:last-child { border-bottom: none; }
+
+a {
+    color: #0969da;
+    text-decoration: none;
+    line-height: 1.45;
+}
+
+a:hover { text-decoration: underline; }
+
+li span {
+    color: #57606a;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    .top { padding: 16px 12px; }
+
+    main { padding: 14px 12px 16px; }
+
+    li {
+        display: block;
+    }
+
+    li span {
+        white-space: normal;
+    }
+}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+    <header class="top">
+        <span class="brand">RSS</span>
+        <nav>
+            <button id="btn-newer">newer</button>
+            <button id="btn-older">older</button>
+        </nav>
+    </header>
+    <main>
+        <div id="date-label"></div>
+        <div id="content"><section data-date="2026-07-02">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://mobius.blog/24892.html'>谁在惩戒那些偏离预期性别角色的人？</a> <span>(09:00)</span></li>
+<li><a href='https://towardsdatascience.com/why-powerful-ml-is-deceptively-easy-part-2/'>Why Powerful ML Is Deceptively Easy — Part 2</a> <span>(00:30)</span></li>
+</ul>
+<h3>News</h3>
+<ul>
+<li><a href='https://www.qbitai.com/2026/07/442024.html'>钉钉A1录音卡入选Gartner AI可穿戴设备报告</a> <span>(16:03)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/442016.html'>招募｜量子位RSS’26专题策划</a> <span>(15:33)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84737'>Cloudflare 推动 AI 公司为内容付费</a> <span>(15:23)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441790.html'>一个广告营销老炮，率先冲刺A股无人驾驶第一股</a> <span>(15:16)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84736'>科学家首次利用非生命成分制造出细胞</a> <span>(14:46)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441786.html'>天工AI业务ARR突破8亿美元，向中国首个非BAT10亿美元ARR的AI公司迈进</a> <span>(14:23)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441725.html'>训练世界模型，开始从人类的肌肉和脑子里偷师了</a> <span>(13:44)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84735'>Anthropic 将移除检测中国用户的秘密代码</a> <span>(13:41)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441586.html'>2000+智算产业代表齐聚深圳，2026 中国智算产业生态发展年会成功举办！</a> <span>(13:33)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441490.html'>世界模型来了因果技术标杆！具身大脑真要长脑子了</a> <span>(12:36)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441491.html'>AI眼镜不再依赖手机！这次真要单飞了</a> <span>(12:20)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441479.html'>7月14日悉尼RSS’26，线下Social Mixer晚宴报名中！</a> <span>(12:07)</span></li>
+<li><a href='https://www.qbitai.com/2026/07/441447.html'>人才黑洞！UC伯克利系主任都加入A社了</a> <span>(11:49)</span></li>
+</ul>
+</section>
+<section data-date="2026-07-01">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://www.geedea.pro/article/all-human-condition/'>阅读阿伦特如何帮我理解后室和架空文学</a> <span>(23:35)</span></li>
+<li><a href='https://towardsdatascience.com/persistent-latent-memory-for-multi-hop-llm-agents-how-a-6g-handover-paper-closes-the-agent-cold-start/'>Persistent Latent Memory for Multi-Hop LLM Agents: How a 6G Handover Paper Closes the Agent Cold-Start</a> <span>(23:00)</span></li>
+<li><a href='https://devblogs.microsoft.com/blog/what-ai-benchmarks-are-not-telling-you'>What AI benchmarks are not telling you</a> <span>(22:31)</span></li>
+<li><a href='https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/'>For the First Time, a Cell Built From Scratch Grows and Divides</a> <span>(22:00)</span></li>
+<li><a href='https://towardsdatascience.com/when-memory-becomes-the-new-bottleneck-in-data-engineering-what-can-we-do/'>What Can We Do When Memory Becomes the New Bottleneck in Data Engineering?</a> <span>(21:30)</span></li>
+<li><a href='https://blog.cloudflare.com/monetization-gateway/'>Announcing the Monetization Gateway: charge for any resource behind Cloudflare via x402</a> <span>(21:00)</span></li>
+<li><a href='https://blog.cloudflare.com/agentic-internet-bot-report/'>Content Independence Day, one year on: building the business model for the agentic Internet</a> <span>(21:00)</span></li>
+<li><a href='https://blog.cloudflare.com/making-ai-search-smarter/'>Making AI search smarter</a> <span>(21:00)</span></li>
+<li><a href='https://blog.cloudflare.com/content-independence-day-ai-options/'>Your site, your rules: new AI traffic options for all customers</a> <span>(21:00)</span></li>
+<li><a href='https://towardsdatascience.com/build-and-run-your-own-ai-agent-in-the-cloud/'>Build and Run Your Own AI Agent in the Cloud</a> <span>(20:00)</span></li>
+<li><a href='https://blog.cloudflare.com/attribution-business-insights/'>Unmasking the crawls with Attribution Business Insights</a> <span>(14:00)</span></li>
+<li><a href='https://1q43.blog/post/12498/'>为什么说 Anthropic 是邪恶的？</a> <span>(13:59)</span></li>
+<li><a href='https://mobius.blog/24886.html'>男性正在遭遇的“系统性”歧视</a> <span>(09:00)</span></li>
+<li><a href='https://huggingface.co/blog/cerebras-gemma4-voice-ai'>Hugging Face and Cerebras bring Gemma 4 to real-time voice AI</a> <span>(08:00)</span></li>
+<li><a href='https://yufree.cn/cn/2026/07/01/2026/'>2026上半年研究速递</a> <span>(08:00)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything'>Quoting Anthropic</a> <span>(07:58)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything'>Nano Banana 2 Lite</a> <span>(06:15)</span></li>
+<li><a href='https://www.youtube.com/watch?v=fG0rf9oRM1o'>台湾：从新竹到台中</a> <span>(06:02)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything'>What&#x27;s new in Claude Sonnet 5</a> <span>(05:23)</span></li>
+<li><a href='https://huggingface.co/blog/ibm-research/scarfbench'>ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration</a> <span>(02:32)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/30/the-ai-compass/#atom-everything'>The AI Compass</a> <span>(01:39)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything'>Have your agent record video demos of its work with shot-scraper video</a> <span>(00:54)</span></li>
+<li><a href='https://towardsdatascience.com/context-engineering-for-rag-the-four-typed-inputs-behind-every-rag-answer/'>Context Engineering for RAG : The Four Typed Inputs Behind Every RAG Answer</a> <span>(00:30)</span></li>
+<li><a href='https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/'>Start building with Nano Banana 2 Lite and Gemini Omni Flash</a> <span>(00:02)</span></li>
+<li><a href='https://mabbs.github.io/2026/07/01/vibe-coding.html'>Vibe Coding新体验</a> <span>(00:00)</span></li>
+</ul>
+<h3>News</h3>
+<ul>
+<li><a href='https://www.solidot.org/story?sid=84734'>瑞典法院判决 Google 向比价网站赔偿 15 亿美元</a> <span>(23:35)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84733'>索尼 PS 从 2028 年 1 月起不再发售新游戏的光盘版</a> <span>(22:18)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84732'>Godot 拒绝接受 AI 生成的代码</a> <span>(21:14)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84731'>LHC 第三次停机维护</a> <span>(19:08)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84730'>研究人员将干细胞转化为人类初级卵母细胞</a> <span>(18:00)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84729'>中国 2026 年汽车出口量有望达到千万</a> <span>(15:39)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84728'>arXiv 从康奈尔大学独立</a> <span>(15:01)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84727'>美国 Henrico 县请求政府和学校为数据中心节约用电</a> <span>(14:26)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84726'>微软发布 WSL 容器的预览版</a> <span>(13:59)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84725'>为什么我们需要睡眠</a> <span>(12:54)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84724'>美国政府解除对 Claude Fable 5 和 Mythos 5 模型的出口限制</a> <span>(11:53)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84723'>Claude Code 会悄悄检查用户的系统时区是否是中国</a> <span>(00:51)</span></li>
+</ul>
+</section>
+<section data-date="2026-06-30">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything'>shot-scraper 1.10</a> <span>(23:10)</span></li>
+<li><a href='https://towardsdatascience.com/surviving-the-data-science-behavioral-interview/'>Surviving the Data Science Behavioral Interview</a> <span>(23:00)</span></li>
+<li><a href='https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable'>Why Specialization Is Inevitable</a> <span>(22:39)</span></li>
+<li><a href='https://towardsdatascience.com/how-to-maximize-codex-exec-command/'>How to Maximize Codex Exec Command</a> <span>(21:30)</span></li>
+<li><a href='https://towardsdatascience.com/stop-choosing-between-local-and-cloud-llms-a-field-guide-to-hybrid-patterns/'>Stop Choosing Between Local and Cloud LLMs: A Field Guide to Hybrid Patterns</a> <span>(20:00)</span></li>
+<li><a href='https://openai.com/index/how-chatgpt-adoption-has-expanded'>How ChatGPT adoption has expanded</a> <span>(17:00)</span></li>
+<li><a href='https://xiaogai.fun/post.html?id=84a6d7fb6a437bfc0011587229ad0ac3'>下了出租车</a> <span>(16:19)</span></li>
+<li><a href='http://www.ruanyifeng.com/blog/2026/06/anthropic.html'>Dario Amodei：AI 开源是伪命题</a> <span>(11:04)</span></li>
+<li><a href='https://mobius.blog/24881.html'>男性有资格认为自己被“歧视”了吗？</a> <span>(09:00)</span></li>
+<li><a href='https://huggingface.co/blog/eee-community-evals'>Featuring Every Eval Ever Results on Hugging Face Model Pages</a> <span>(08:00)</span></li>
+<li><a href='https://openai.com/index/genebench-pro/case-studies'>Inside Genebench-Pro</a> <span>(08:00)</span></li>
+<li><a href='https://openai.com/index/introducing-genebench-pro'>Introducing GeneBench-Pro</a> <span>(08:00)</span></li>
+<li><a href='https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug'>Core dump epidemiology: fixing an 18-year-old bug</a> <span>(08:00)</span></li>
+<li><a href='https://yufree.cn/cn/2026/06/30/living-in-the-past/'>刻舟求剑</a> <span>(08:00)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything'>HTML table extractor</a> <span>(07:38)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything'>Count the number of Safari tabs</a> <span>(02:36)</span></li>
+<li><a href='https://huggingface.co/blog/allenai/discoformer'>DiScoFormer: One transformer for density and score, across distributions</a> <span>(02:02)</span></li>
+<li><a href='https://towardsdatascience.com/how-far-can-classical-nlp-go-from-bag-of-words-to-stacking-on-spooky-author-identification/'>How Far Can Classical NLP Go? From Bag-of-Words to Stacking on Spooky Author Identification</a> <span>(01:34)</span></li>
+<li><a href='https://victor42.eth.limo/post/trip-to-zhoushan/'>舟山朱家尖亲子自驾4天3晚</a> <span>(01:15)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/29/ornith/#atom-everything'>Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding</a> <span>(00:17)</span></li>
+</ul>
+<h3>News</h3>
+<ul>
+<li><a href='https://www.solidot.org/story?sid=84722'>小鼠实验显示单次注射 DNA 指令的减肥时效十倍于 GLP-1 药物</a> <span>(23:52)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84721'>数据中心碳排放比预想的严重</a> <span>(22:05)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84720'>试验显示鱼油未能改善大脑健康</a> <span>(21:49)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84719'>中国大学停招众多语言专业</a> <span>(19:29)</span></li>
+<li><a href='https://www.solidot.org/story?sid=84718'>国际清算银行警告 AI 泡沫破裂将增加全球经济衰退风险</a> <span>(17:05)</span></li>
+</ul>
+</section>
+<section data-date="2026-06-29">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://towardsdatascience.com/prompt-engineering-fails-quietly-prompt-regression-is-why/'>Prompt Engineering Fails Quietly —  Prompt Regression Is Why</a> <span>(23:00)</span></li>
+<li><a href='https://www.quantamagazine.org/what-breaks-a-cells-ribs-can-make-it-stronger-20260629/'>What Breaks a Cell’s Ribs Can Make It Stronger</a> <span>(22:00)</span></li>
+<li><a href='https://towardsdatascience.com/i-completed-five-years-in-analytics-consulting-5-lessons-that-changed-how-i-work/'>I Completed Five Years in Analytics Consulting: 5 Lessons That Changed How I Work</a> <span>(21:30)</span></li>
+<li><a href='https://towardsdatascience.com/how-to-choose-between-small-and-frontier-models/'>How to Choose Between Small and Frontier Models</a> <span>(20:00)</span></li>
+<li><a href='https://openai.com/index/mapping-ai-jobs-transition-eu'>Mapping Europe’s AI Workforce Opportunity</a> <span>(15:00)</span></li>
+<li><a href='https://xiaogai.fun/post.html?id=4a97d1996a41d9ac0120327a7808aced'>人总会被困在某处。</a> <span>(10:34)</span></li>
+<li><a href='https://xiaogai.fun/post.html?id=4a97d1996a41d91a0120281d2c699d7a'>强者心态和弱者心态。</a> <span>(10:31)</span></li>
+<li><a href='https://www.geedea.pro/weekly/87/'>大脑充血 Vol.87</a> <span>(09:44)</span></li>
+<li><a href='https://mobius.blog/24875.html'>男性同样也遭受性别歧视？</a> <span>(09:00)</span></li>
+<li><a href='https://hellogithub.com/periodical/volume/123'>HelloGitHub 第 123 期</a> <span>(08:10)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything'>Quoting Jon Udell</a> <span>(05:57)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything'>Hack Your Summer</a> <span>(03:26)</span></li>
+<li><a href='https://openai.com/index/hp-frontier-partnership'>HP Inc. launches Frontier strategic partnership with OpenAI</a> <span>(01:00)</span></li>
+</ul>
+</section>
+<section data-date="2026-06-28">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://innei.in/notes/216'>在 AI 浪潮下，如何留在牌桌上</a> <span>(23:51)</span></li>
+<li><a href='https://towardsdatascience.com/tail-control-the-counterintuitive-engineering-of-reliable-agentic-workflows/'>Tail Control: The Counterintuitive Engineering of Reliable Agentic Workflows</a> <span>(23:00)</span></li>
+<li><a href='https://wangyurui.com/posts/she-hui-xue-wei-shi-yao-zai-zhong-guo-nan-yi-fa-112bb4cd'>社会学为什么在中国难以发展？｜ 隐说 NO. 27</a> <span>(21:56)</span></li>
+<li><a href='https://towardsdatascience.com/i-pitted-xgboost-against-logistic-regression-on-358-matches-the-boring-model-won/'>I Pitted XGBoost Against Logistic Regression on 358 Matches. The Boring Model Won.</a> <span>(21:00)</span></li>
+<li><a href='https://www.changhai.org/articles/technology/misc/AI_and_Math.php'>AI 时代的数学研究</a> <span>(18:45)</span></li>
+<li><a href='https://xiaogai.fun/post.html?id=c6c1a17e6a408e95022fe50b1f38a378'>暑假</a> <span>(11:01)</span></li>
+<li><a href='https://www.changhai.org/articles/miscellaneous/blog/202605.php#latest'>最新微博：2026 年 6 月 27 日</a> <span>(09:04)</span></li>
+<li><a href='https://mobius.blog/24853.html'>这一周莫比乌斯环转到了哪里？</a> <span>(09:00)</span></li>
+<li><a href='https://wsh233.cn/post/ai见闻之政策'>AI见闻之政策</a> <span>(01:31)</span></li>
+<li><a href='https://wsh233.cn/post/ai见闻之数据'>AI见闻之数据</a> <span>(01:26)</span></li>
+</ul>
+</section>
+<section data-date="2026-06-27">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://www.geedea.pro/article/pamela-reif/'>为什么我只跟练帕梅拉？</a> <span>(23:24)</span></li>
+<li><a href='https://towardsdatascience.com/we-built-a-routing-layer-to-cut-our-ai-costs-it-broke-the-product/'>We Built a Routing Layer to Cut Our AI Costs. It Broke the Product.</a> <span>(23:00)</span></li>
+<li><a href='https://towardsdatascience.com/how-to-build-a-powerful-llm-knowledge-base/'>How to Build a Powerful LLM Knowledge Base</a> <span>(21:00)</span></li>
+<li><a href='https://www.geedea.pro/article/je-deteste-la-ville/'>Je déteste la vi(ll)e</a> <span>(16:40)</span></li>
+<li><a href='https://mobius.blog/24866.html'>您受累，搞个大新闻儿！</a> <span>(09:00)</span></li>
+<li><a href='http://life.wellwellsleep.com/post/life/2026-06-27-trend-of-ai'>AI的浪潮</a> <span>(08:00)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything'>Quoting Dean W. Ball</a> <span>(06:25)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything'>Quoting Timothy B. Lee</a> <span>(05:15)</span></li>
+<li><a href='https://blog.devtang.com/2026/06/26/illustrated-skill-review/'>理解 Skill —— 读《图解 Skill》</a> <span>(03:04)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/26/hack-my-ai-assistant/#atom-everything'>What happened after 2,000 people tried to hack my AI assistant</a> <span>(02:33)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/26/incident-report/#atom-everything'>Incident Report: CVE-2026-LGTM</a> <span>(01:58)</span></li>
+<li><a href='https://simonwillison.net/2026/Jun/26/openai/#atom-everything'>Quoting OpenAI</a> <span>(01:10)</span></li>
+<li><a href='https://towardsdatascience.com/from-local-llm-to-tool-using-agent/'>From Local LLM to Tool-Using Agent</a> <span>(00:30)</span></li>
+</ul>
+</section>
+<section data-date="2026-06-26">
+<h3>Blogs</h3>
+<ul>
+<li><a href='https://www.quantamagazine.org/after-80-years-mathematicians-give-famed-erdos-method-an-upgrade-20260626/'>After 80 Years, Mathematicians Give Famed ‘Erdős Method’ an Upgrade</a> <span>(23:26)</span></li>
+<li><a href='https://towardsdatascience.com/water-cooler-small-talk-ep-11-overfitting-in-rag-evaluation/'>Water Cooler Small Talk, Ep. 11: Overfitting in RAG evaluation</a> <span>(23:00)</span></li>
+<li><a href='https://towardsdatascience.com/amplify-the-expert-a-philosophy-for-building-enterprise-rag/'>Amplify the Expert: A Philosophy for Building Enterprise RAG</a> <span>(21:30)</span></li>
+<li><a href='https://www.anaconda.com/blog/automate-conda-publishing-anaconda-github-actions'>Automate Conda Publishing with Anaconda GitHub Actions</a> <span>(20:17)</span></li>
+<li><a href='https://towardsdatascience.com/how-to-ace-data-ml-behavioural-interviews/'>How to Ace Data and ML Behavioural Interviews</a> <span>(20:00)</span></li>
+<li><a href='https://openai.com/index/previewing-gpt-5-6-sol'>Previewing GPT-5.6 Sol: a next-generation model</a> <span>(18:00)</span></li>
+</ul>
+</section></div>
+    </main>
+</div>
+<script>(function() {
+    var sections = document.querySelectorAll('section[data-date]');
+    if (!sections.length) return;
+
+    var dates = Array.from(sections, function(s) { return s.dataset.date; });
+    var today = dates[0];
+
+    var label = document.getElementById('date-label');
+    var btnNewer = document.getElementById('btn-newer');
+    var btnOlder = document.getElementById('btn-older');
+
+    var current = '';
+
+    function fmt(d) {
+        var dt = new Date(d + 'T00:00:00');
+        return dt.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    }
+
+    function show(d) {
+        var i;
+        for (i = 0; i < sections.length; i++) {
+            sections[i].hidden = sections[i].dataset.date !== d;
+        }
+        current = d;
+        i = dates.indexOf(d);
+        label.textContent = fmt(d) + (d === today ? ' (today)' : '');
+        btnNewer.disabled = i === 0;
+        btnOlder.disabled = i === dates.length - 1;
+        if (d !== window.location.hash.slice(1)) {
+            history.replaceState(null, '', '#' + d);
+        }
+    }
+
+    btnNewer.onclick = function() {
+        var i = dates.indexOf(current);
+        if (i > 0) show(dates[i - 1]);
+    };
+    btnOlder.onclick = function() {
+        var i = dates.indexOf(current);
+        if (i < dates.length - 1) show(dates[i + 1]);
+    };
+
+    var hash = window.location.hash.slice(1);
+    show(dates.indexOf(hash) !== -1 ? hash : today);
+})();
+</script>
+</body>
+</html>
