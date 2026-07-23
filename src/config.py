@@ -51,7 +51,6 @@ RSS_FEEDS = {
         "https://www.anaconda.com/feed",
         "https://towardsdatascience.com/feed/",
         "https://karpathy.github.io/feed.xml",
-        "https://www.science.org/rss/news_current.xml",
         "https://www.quantamagazine.org/feed/",
         "https://yihui.org/en/index.xml",
         "https://yihui.org/cn/index.xml",
@@ -59,7 +58,6 @@ RSS_FEEDS = {
         "https://deepzz.com/rss.html",
         "https://deepmind.google/blog/rss.xml",
         "https://openai.com/news/rss.xml",
-        "https://simonwillison.net/atom/everything/",
         "https://blog.drpika.com/rss.xml",
         "https://xiaogai.fun/blogApi?action=getRss",
         "https://mabbs.github.io/rss.xml",
@@ -88,11 +86,22 @@ RSS_FEEDS = {
         "https://daimajia.com/feed/",
         "https://geekplux.com/feed.xml",
         "https://luolei.org/rss.xml",
-        "sspai_matrix"
+        "https://lh3.github.io/rss.xml",
+        "https://feed.appinn.com/",
+        "https://feed.itsfoss.com/"
 
     ],
     'News': [
         "https://www.qbitai.com/feed",
         "https://www.solidot.org/index.rss",
+        "https://www.science.org/rss/news_current.xml",
+    ],
+    'Publications': [
+        "https://www.cell.com/cell/inpress.rss",
+        "https://www.cell.com/cell/current.rss",
+        "https://www.nature.com/nature.rss",
+        "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
+        "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
+        "https://www.pnas.org/action/showFeed?type=searchTopic&taxonomyCode=type&tagCode=twip",
     ],
 }
