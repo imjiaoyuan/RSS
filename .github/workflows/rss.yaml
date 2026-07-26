@@ -1,4 +1,4 @@
-name: Deploy RSS to Pages
+name: Fetch RSS Feeds & Deploy
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v5
 
       - name: Install dependencies
         run: uv pip install --system feedparser
@@ -37,7 +37,7 @@ jobs:
           python src/get_rss.py ./public
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
