@@ -26,15 +26,12 @@ RSS_FEEDS = {
         "https://www.lainme.com/feed",
         "https://szclsya.me/zh-cn/index.xml",
         "https://bigeagle.me/index.xml",
-        "https://www.tianxianzi.me/index.xml",
-        "https://thirdshire.com/index.xml",
         "https://wangyurui.com/feed.xml",
         "https://innei.in/feed",
         "https://tech.meituan.com/feed/",
         "https://onevcat.com/feed.xml",
         "https://zhul.in/rss.xml",
         "https://blog.dejavu.moe/index.xml",
-        "https://www.archlinuxcn.org/feed/",
         "https://blog.codingnow.com/atom.xml",
         "https://www.ruanyifeng.com/blog/atom.xml",
         "https://blog.devtang.com/atom.xml",
@@ -44,7 +41,6 @@ RSS_FEEDS = {
         "https://raw.githubusercontent.com/yihong0618/gitblog/master/feed.xml",
         "https://justgoidea.com/rss.xml",
         "https://caveallegory.cn/feed/",
-        "https://darmau.co/zh/article/rss.xml",
         "https://blog.cloudflare.com/rss",
         "https://huggingface.co/blog/feed.xml",
         "https://www.anaconda.com/feed",
@@ -64,7 +60,6 @@ RSS_FEEDS = {
         "https://www.williamlong.info/rss.xml",
         "https://blog.youxu.info/feed.xml",
         "https://life.wellwellsleep.com/feed",
-        "https://liangmouyin.com/index.xml",
         "https://victor42.eth.limo/index.xml",
         "https://limboy.me/index.xml",
         "https://www.geedea.pro/index.xml",
@@ -86,7 +81,6 @@ RSS_FEEDS = {
         "https://lh3.github.io/rss.xml",
         "https://feed.appinn.com/",
         "https://feed.itsfoss.com/"
-
     ],
     'News': [
         "https://www.qbitai.com/feed",
@@ -94,8 +88,6 @@ RSS_FEEDS = {
         "https://www.science.org/rss/news_current.xml",
     ],
     'Publications': [
-        "https://www.cell.com/cell/inpress.rss",
-        "https://www.cell.com/cell/current.rss",
         "https://www.nature.com/nature.rss",
         "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
         "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
