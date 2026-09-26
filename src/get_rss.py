@@ -75,10 +75,6 @@ def render_articles(articles):
 def generate_html(articles_by_date, output_path):
     china_tz = timezone(timedelta(hours=8))
     today_str = datetime.now(china_tz).strftime('%Y-%m-%d')
-    category_order = ('Weather',)
-
-    def cat_key(cat):
-        return (category_order.index(cat) if cat in category_order else len(category_order), cat)
 
     sorted_dates = sorted(articles_by_date.keys(),
                           key=lambda x: datetime.strptime(x, '%Y-%m-%d'), reverse=True)
@@ -97,7 +93,7 @@ def generate_html(articles_by_date, output_path):
             sections.append("<p>No articles published today.</p>")
         else:
             by_cat = articles_by_date.get(date_str, {})
-            for cat in sorted(by_cat.keys(), key=cat_key):
+            for cat in sorted(by_cat.keys()):
                 sections.append(f"<h3>{cat}</h3>")
                 sections.append("<ul>")
                 sections.append(render_articles(by_cat[cat]))
